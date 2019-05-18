@@ -6,6 +6,7 @@
   - Ayuda y seleccción de Postman con Backend (Carlos Nieto)
   - Desarollo de Arboles y diagrama de componentes (Carlos Nieto y Elsa Johanna Arias Munoz)
   - Rutas (Elsa Johanna Arias Munoz)
+  - Desarollo de vistas relacionadas con Login y Sign Up (Elsa Johanna Arias Munoz y Luis Alejandro Higuaran Serrano)
   - Documentación SRC, y demas documentos (Luis Alejandro Higuaran Serrano)
 
 # Next Features
