@@ -1,22 +1,29 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-//import ElPlan from './index';
+import React, { Component } from 'react';
+import {
+  StyleSheet,
+  View,
+  StatusBar
+} from 'react-native';
 
-export default class App extends React.Component {
+
+import Routes from './src/Routes';
+
+export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <StatusBar
+           backgroundColor="#1c313a"
+           barStyle="light-content"
+         />
+        <Routes/>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container : {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  }
 });
