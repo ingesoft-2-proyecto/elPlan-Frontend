@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 
-import Routes from './src/Routes';
+import Routes from './src/routing/Routes';
 
 export default class App extends Component<{}> {
   render() {
