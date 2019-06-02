@@ -1,29 +1,9 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View,
-  StatusBar
-} from 'react-native';
+import LoggedOut from './src/screens/LoggedOut';
 
-
-import Routes from './src/routing/Routes';
 
 export default class App extends Component<{}> {
   render() {
-    return (
-      <View style={styles.container}>
-        <StatusBar
-           backgroundColor="#1c313a"
-           barStyle="light-content"
-         />
-        <Routes/>
-      </View>
-    );
+    return <LoggedOut /> 
   }
 }
-
-const styles = StyleSheet.create({
-  container : {
-    flex: 1,
-  }
-});
