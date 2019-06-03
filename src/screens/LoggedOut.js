@@ -5,6 +5,7 @@ import {
   Text,
   View,
   Image,
+  TouchableHighlight,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -33,48 +34,53 @@ export default class LoggedOut extends Component {
 
 
   render() {
-      return (
-      <View style = {styles.wrapper}>
+    return (
+  <View style = {styles.wrapper}>
       <View style={styles.welcomeWrapper} >
-        <Image
-          source= {require('../assets/logoProto.png')}
-          style={styles.logo}
-          />
-          <Text style={styles.welcomeText}>¿Sin nada que hacer?</Text>
-          <Text style={styles.subwelcomeText}>Obten ideas de actividades personalizadas en tus gustos</Text>
-          <RoundedButton
-            text="Comenzar"
-            textColor={colors.green01}
-            background={colors.white}
-            //icon = <Icon name="street-view" size={20} style={styles.facebookButtonIcon} />
-            handleOnPress={this.onStartPress}
-          />
-        <Text style={styles.subwelcomeText}> Continua con tus redes sociales </Text>
+             <Image
+               source= {require('../assets/logoProto.png')}
+               style={styles.logo}
+               />
+               <Text style={styles.welcomeText}>¿Sin nada que hacer?</Text>
+               <Text style={styles.subwelcomeText}>Obten ideas de actividades personalizadas en tus gustos</Text>
+               <RoundedButton
+                 text="Comenzar"
+                 textColor={colors.green01}
+                 background={colors.white}
+                 //icon = <Icon name="street-view" size={20} style={styles.facebookButtonIcon} />
+                 handleOnPress={this.onStartPress}
+               />
+             <Text style={styles.subwelcomeText}> Continua con tus redes sociales </Text>
 
-      <View style= {styles.buttonMedia} >
+           <View style= {styles.buttonMedia} >
 
-            <SocialMediaButton
-                icon = <Icon name="facebook" size={50} style={styles.facebookButtonIcon}  />
-               handleOnPress={this.onFacebookPress}
-              />
-              <SocialMediaButton
-                icon = <Icon name="google" size={50} style={styles.googleButtonIcon} />
-              handleOnPress={this.onGooglePress}
-              />
-          </View>
+                 <SocialMediaButton
+                     icon = <Icon name="facebook" size={50} style={styles.facebookButtonIcon}  />
+                    handleOnPress={this.onFacebookPress}
+                   />
+                   <SocialMediaButton
+                     icon = <Icon name="google" size={50} style={styles.googleButtonIcon} />
+                   handleOnPress={this.onGooglePress}
+                   />
+               </View>
 
-          <RoundedButton
-            text="Registrate por correo"
-            textColor={colors.white}
-            icon = <Icon name="envelope" size={20} style={styles.registerButtonIcon}  />
-          handleOnPress={this.onCreateAccount}
-          />
+               <RoundedButton
+                 text="Registrate por correo"
+                 textColor={colors.white}
+                 icon = <Icon name="envelope" size={20} style={styles.registerButtonIcon}  />
+               handleOnPress={this.onCreateAccount}
+               />
+
+             <TouchableHighlight style={styles.singInButton} >
+               <Text style={styles.singInButtonText}> ¿Ya tienes una cuenta? Ingresa aqui </Text>
+
+           </TouchableHighlight>
 
 
       </View>
-    </View>
-    );
-  }
+  </View>
+ );
+}
 }
 
 const styles = StyleSheet.create ({
@@ -140,9 +146,20 @@ const styles = StyleSheet.create ({
 
   },
 
+  singInButton:{
+    marginTop: 15,
+  },
+
+  singInButtonText:{
+    color:colors.white,
+    fontSize: 16,
+
+
+  },
+
   logo:{
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     marginTop: 10,
     marginBottom: 10,
 
