@@ -10,7 +10,7 @@ import colors from '../../styles/colors';
 
 export default class RoundedButton extends Component {
 	render(){
-    const{text, textColor, background, handleOnPress } = this.props;
+    const{text, textColor, background, icon, handleOnPress } = this.props;
     const backgroundColor = background||'transparent';
     const color= textColor || colors.black;
 
@@ -19,9 +19,12 @@ export default class RoundedButton extends Component {
        style ={[{backgroundColor}, styles.wrapper]}
        onPress={handleOnPress}
        >
+       <View style= {styles.buttonTextWrapper}>
+       {icon}
         <Text style={[{color}, styles.buttonText]}>
         {text}
         </Text>
+      </View>
       </TouchableHighlight>
 );
 	}
@@ -45,6 +48,12 @@ const styles = StyleSheet.create({
     borderColor: colors.width,
 
   },
+	buttonTextWrapper:{
+		flexDirection: 'row',
+		justifyContent: 'flex-end',
+		
+	},
+
   buttonText:{
     fontSize: 17,
     width: '100%',

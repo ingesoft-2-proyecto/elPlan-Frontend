@@ -7,14 +7,30 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "^32.0.0",
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.18",
+    "@fortawesome/free-brands-svg-icons": "^5.8.2",
+    "@fortawesome/free-regular-svg-icons": "^5.8.2",
+    "@fortawesome/free-solid-svg-icons": "^5.8.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@fortawesome/react-native-fontawesome": "^0.1.0",
+    "expo": "^32.0.6",
+    "font-awesome": "^4.7.0",
     "react": "16.5.0",
+    "react-fontawesome": "^1.6.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-elements": "^1.1.0",
+    "react-native-fontawesome": "^6.0.1",
     "react-native-router-flux": "^4.0.6",
-    "react-navigation": "^3.10.2",
+    "react-native-search-bar": "^3.4.2",
+    "react-native-svg": "^9.4.0",
+    "react-native-vector-icons": "^6.4.2",
+    "react-navigation": "^3.11.0",
     "react-router": "^5.0.0"
   },
   "devDependencies": {
+    "@expo/vector-icons": "^10.0.1",
     "babel-preset-expo": "^5.0.0"
   },
   "private": true

@@ -6,12 +6,34 @@ import {
   View,
   Image,
 } from 'react-native';
-import RoundedButton from '../components/buttons/RoundedButton';
+
+import Icon from 'react-native-vector-icons/FontAwesome';
+//import { Icon } from 'react-native-elements';
+//import Icon from '../../node_modules/react-native-vector-icons/FontAwesome';
+ import RoundedButton from '../components/buttons/RoundedButton';
+import SocialMediaButton from '../components/buttons/SocialMediaButton';
 
 export default class LoggedOut extends Component {
-  render() {
+  onFacebookPress(){
+    alert('El boton de facebook ');
+  }
 
-    return (
+  onGooglePress(){
+    alert('El boton de google ');
+  }
+
+  onCreateAccount(){
+    alert('El boton de cuenta');
+  }
+
+  onStartPress(){
+    alert('El boton comenzar ');
+  }
+
+
+
+  render() {
+      return (
       <View style = {styles.wrapper}>
       <View style={styles.welcomeWrapper} >
         <Image
@@ -24,7 +46,31 @@ export default class LoggedOut extends Component {
             text="Comenzar"
             textColor={colors.green01}
             background={colors.white}
+            //icon = <Icon name="street-view" size={20} style={styles.facebookButtonIcon} />
+            handleOnPress={this.onStartPress}
           />
+        <Text style={styles.subwelcomeText}> Continua con tus redes sociales </Text>
+
+      <View style= {styles.buttonMedia} >
+
+            <SocialMediaButton
+                icon = <Icon name="facebook" size={50} style={styles.facebookButtonIcon}  />
+               handleOnPress={this.onFacebookPress}
+              />
+              <SocialMediaButton
+                icon = <Icon name="google" size={50} style={styles.googleButtonIcon} />
+              handleOnPress={this.onGooglePress}
+              />
+          </View>
+
+          <RoundedButton
+            text="Registrate por correo"
+            textColor={colors.white}
+            icon = <Icon name="envelope" size={20} style={styles.registerButtonIcon}  />
+          handleOnPress={this.onCreateAccount}
+          />
+
+
       </View>
     </View>
     );
@@ -52,22 +98,53 @@ const styles = StyleSheet.create ({
     fontSize: 30,
     color: colors.white,
     fontWeight: '300',
-    marginBottom: 20,
+    marginBottom: 10,
 
   },
 
   subwelcomeText:{
-    fontSize: 20,
+    fontSize: 15,
     color: colors.white,
     fontWeight: '300',
+    marginTop: 20,
     marginBottom: 40,
   },
 
+  buttonMedia:{
+    flex: 1,
+    flexDirection:'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent:'center',
+
+  },
+
+  facebookButtonIcon:{
+    color:colors.facebookColor,
+
+  },
+
+  googleButtonIcon:{
+    color:colors.googleColor,
+    //position: 'relative',
+    //left: 20,
+    //zIndex: 8,
+
+  },
+
+  registerButtonIcon:{
+    color:colors.white,
+    position: 'relative',
+    left: 20,
+    zIndex: 8,
+
+  },
+
   logo:{
-    width: 150,
-    height: 150,
-    marginTop: 50,
-    marginBottom: 40,
+    width: 100,
+    height: 100,
+    marginTop: 10,
+    marginBottom: 10,
 
   }
 });
