@@ -45,13 +45,13 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 40,
     borderWidth: 1,
-    borderColor: colors.width,
+    borderColor: colors.blueC,
 
   },
 	buttonTextWrapper:{
 		flexDirection: 'row',
 		justifyContent: 'flex-end',
-		
+
 	},
 
   buttonText:{

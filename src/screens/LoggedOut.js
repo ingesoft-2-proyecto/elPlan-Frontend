@@ -31,6 +31,9 @@ export default class LoggedOut extends Component {
     alert('El boton comenzar ');
   }
 
+  singInButtonPress(){
+      alert('Sign Up ');
+  }
 
 
   render() {
@@ -66,12 +69,16 @@ export default class LoggedOut extends Component {
 
                <RoundedButton
                  text="Registrate por correo"
-                 textColor={colors.white}
+                 textColor={colors.blueC}
                  icon = <Icon name="envelope" size={20} style={styles.registerButtonIcon}  />
                handleOnPress={this.onCreateAccount}
                />
 
-             <TouchableHighlight style={styles.singInButton} >
+
+             <TouchableHighlight
+               style={styles.singInButton}
+               onPress={this.singInButtonPress}
+               >
                <Text style={styles.singInButtonText}> ¿Ya tienes una cuenta? Ingresa aqui </Text>
 
            </TouchableHighlight>
@@ -112,7 +119,7 @@ const styles = StyleSheet.create ({
     fontSize: 15,
     color: colors.white,
     fontWeight: '300',
-    marginTop: 20,
+    marginTop: 10,
     marginBottom: 40,
   },
 
@@ -139,7 +146,7 @@ const styles = StyleSheet.create ({
   },
 
   registerButtonIcon:{
-    color:colors.white,
+    color:colors.blueC,
     position: 'relative',
     left: 20,
     zIndex: 8,
@@ -151,7 +158,7 @@ const styles = StyleSheet.create ({
   },
 
   singInButtonText:{
-    color:colors.white,
+    color:colors.blueC,
     fontSize: 16,
 
 
