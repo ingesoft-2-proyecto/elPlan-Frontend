@@ -10,5 +10,5 @@
 # Next Features
 
   - Manejo google maps
-  - Mas flujos (Comentarios)
+  - Mas flujos (Comentarios).
 
