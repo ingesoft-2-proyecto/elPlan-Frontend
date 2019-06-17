@@ -12,12 +12,13 @@ Text,
 
 export default class NextArrowButton extends Component {
   render() {
-    const {disabled} = this.props;
+    const {disabled, handleNextButton} = this.props;
    const opacityStyle = disabled ? 0.2 : 0.6;
 
     return (
       <TouchableHighlight
       style = {[{opacity: opacityStyle}, styles.button]}
+      onPress = {handleNextButton}
       >
       <Icon
       name = "angle-right"
@@ -30,6 +31,11 @@ export default class NextArrowButton extends Component {
     );
   }
 }
+
+NextArrowButton.propTypes = {
+  disabled : PropTypes.bool,
+   handleNextButton: PropTypes.func,
+};
 
 const styles = StyleSheet.create({
   button: {

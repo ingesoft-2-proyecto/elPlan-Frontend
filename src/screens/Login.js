@@ -20,7 +20,9 @@ export default class Login extends Component {
   }
   render(){
     return(
-      <KeyboardAvoidingView style= {styles.wrapper}>
+      <KeyboardAvoidingView style= {styles.wrapper}
+      behavior = 'padding'
+      >
         <View style ={styles.ScrollViewWrapper}>
           <ScrollView style ={styles.scrollView}>
             <Text style = {styles.loginHeader}>
@@ -88,7 +90,7 @@ loginHeader:{
 nextButton: {
   alignItems:'flex-end',
   right: 20,
-  bottom: 10,
+  bottom: 1 ,
 
 }
 });
