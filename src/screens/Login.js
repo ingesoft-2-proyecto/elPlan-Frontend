@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, StatusBar , TouchableOpacity, TextInput, ActivityIndicator} from 'react-native';
+import { StyleSheet, Text, View, StatusBar , TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage} from 'react-native';
 import Logo from '../components/Logo';
 import {Actions} from 'react-native-router-flux';
 import Expo from "expo";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
 
-export default class Login extends Component<{}> {
+export default class Login extends Component {
 
 	signup() {
 		Actions.signup()
@@ -19,24 +19,32 @@ export default class Login extends Component<{}> {
   constructor(props) {
     super(props);
     this.state = {
-      email: 'prueba@gmail.com',
-      password: '123456789',
+      email: 'Correo Electronico',
+      password: 'Contraseña',
       isLoading: false,
-      error: ''
+      error: '',
     };
   }
 
   async sendData() {
 
     try {
-      this.setState({ isLoading: true })
+      this.setState(
+        {
+          isLoading: true
+        }
+      )
       let response = await sendDataToLogIn(this.state.email, this.state.password)
 
-      console.log("login | res status: " + response.status)
+      console.log("login | Response status: " + response.status)
 
       if (response.status >= 200 && response.status < 300) {
         let res = await response.json();
-        this.setState({ error: "" })
+        this.setState(
+          { 
+            error: "" 
+          }
+        )
         let accessToken = res.jwt
         storeToken(accessToken);
         console.log("Access Token: " + accessToken)
@@ -45,7 +53,7 @@ export default class Login extends Component<{}> {
       } else {
         removeToken()
         this.setState({ isLoading: false })
-        this.setState({ error: "Algo salio mal" })
+        this.setState({ error: "Invalid username or Password" })
       }
 
     } catch (error) {
@@ -59,8 +67,8 @@ export default class Login extends Component<{}> {
     if (this.state.isLoading) {
       return (
         <View>
-          <View style={styles.home_TextContainer}>
-            <Text style={styles.headling}>Loading...</Text>
+          <View style={styles.container}>
+            <Text style={styles.headling}>LOGUEANDO...</Text>
             <ActivityIndicator size="large" color="#00CCFF" />
           </View>
         </View>
