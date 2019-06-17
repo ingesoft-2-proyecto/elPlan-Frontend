@@ -5,8 +5,7 @@ export default {
     green01: '#10171e',
     green02: '#17bf63',
     facebookColor:'#3b5998',
-    googleColor: '#d93900',
+    googleColor: '#e0245e',
     twitterColor: '#4099ff',
-    pinkC: '#e0245e',
-    lightGray: '#d8d8d8',
+
 }
