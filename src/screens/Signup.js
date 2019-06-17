@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  StatusBar ,
-  TouchableOpacity,
-  TextInput
-} from 'react-native';
-
+import { StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage } from 'react-native';
 import Logo from '../components/Logo';
-
-import {Actions} from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux';
+import Expo from "expo";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
 
 export default class Signup extends Component<{}> {
 
@@ -22,10 +16,25 @@ export default class Signup extends Component<{}> {
     Actions.app_form();
   }
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'Nombre',
+      lastname: 'Apellido',
+      birthday: new Date(),
+      age: new Age(),
+      email: 'Correo Electronico',
+      password: 'Contraseña',
+      isLoading: false,
+      error: '',
+    };
+  }
+
+  
+
 	render() {
 		return(
 			<View style={styles.container}>
-				<Logo/>
         <View style={styles.container2}>
           <TextInput style={styles.inputBox}
             underlineColorAndroid='rgba(0,0,0,0)'

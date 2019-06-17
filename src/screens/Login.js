@@ -1,24 +1,79 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  StatusBar ,
-  TouchableOpacity,
-  TextInput
-} from 'react-native';
-
+import { StyleSheet, Text, View, StatusBar , TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage} from 'react-native';
 import Logo from '../components/Logo';
-
 import {Actions} from 'react-native-router-flux';
+import Expo from "expo";
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
 
-export default class Login extends Component<{}> {
+export default class Login extends Component {
 
 	signup() {
 		Actions.signup()
-	}
+  }
+
+  home() {
+    Actions.home()
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: 'Correo Electronico',
+      password: 'Contraseña',
+      isLoading: false,
+      error: '',
+    };
+  }
+
+  async sendData() {
+
+    try {
+      this.setState(
+        {
+          isLoading: true
+        }
+      )
+      let response = await sendDataToLogIn(this.state.email, this.state.password)
+
+      console.log("login | Response status: " + response.status)
+
+      if (response.status >= 200 && response.status < 300) {
+        let res = await response.json();
+        this.setState(
+          { 
+            error: "" 
+          }
+        )
+        let accessToken = res.jwt
+        storeToken(accessToken);
+        console.log("Access Token: " + accessToken)
+        this.setState({ isLoading: false })
+        this.home()
+      } else {
+        removeToken()
+        this.setState({ isLoading: false })
+        this.setState({ error: "Invalid username or Password" })
+      }
+
+    } catch (error) {
+      this.setState({ isLoading: false })
+      this.setState({ error: error })
+      console.log("error: " + error)
+    }
+  }
 
 	render() {
+    if (this.state.isLoading) {
+      return (
+        <View>
+          <View style={styles.container}>
+            <Text style={styles.headling}>LOGUEANDO...</Text>
+            <ActivityIndicator size="large" color="#00CCFF" />
+          </View>
+        </View>
+      );
+    }
 		return(
 			<View style={styles.container}>
 				<Logo/>
@@ -26,19 +81,22 @@ export default class Login extends Component<{}> {
           <TextInput style={styles.inputBox}
             underlineColorAndroid='rgba(0,0,0,0)'
             placeholder="Email"
+            maxLength= {100}
             placeholderTextColor="#ffffff"
             selectionColor="#fff"
             keyboardType="email-address"
-            onSubmitEditing={() => this.password.focus()}
+            onChangeText={(email) => this.setState({ email })}
+            value={this.state.email}
           />
           <TextInput style={styles.inputBox}
             underlineColorAndroid='rgba(0,0,0,0)'
             placeholder="Password"
             secureTextEntry={true}
             placeholderTextColor="#ffffff"
-            ref={(input) => this.password = input}
+            onChangeText={(password) => this.setState({ password })}
           />
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button}
+            onPress={() => this.sendData()}>
             <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
         </View>
@@ -100,6 +158,11 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     color: '#ffffff',
     textAlign: 'center'
+  },
+  headling: {
+    color: '#00CCFF',
+    fontSize: hp('6%'),
+    textAlign: 'center',
+    margin: hp('5%'),
   }
-
 });
