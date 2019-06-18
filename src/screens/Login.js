@@ -12,6 +12,7 @@ import{
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
+import Loader from '../components/Loader';
 
 
 export default class Login extends Component {
@@ -23,6 +24,7 @@ export default class Login extends Component {
       validEmail: false,
       emailAddress: '',
       validPassword: false,
+      loadingVisible: false,
 
     };
     this.handleCloseNotification  = this.handleCloseNotification.bind(this);
@@ -34,13 +36,17 @@ export default class Login extends Component {
   }
 
   handleNextButton(){
+
+    this.setState({loadingVisible: true});
+
+    setTimeout (() => {
     if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
           alert ('success');
-      this.setState ({formValid: true});
+      this.setState ({formValid: true, loadingVisible: false});
     } else {
-        this.setState({formValid: false});
-    }
-
+        this.setState({formValid: false, loadingVisible: false});
+      }
+    }, 2000);
   }
 
   handleCloseNotification(){
@@ -83,7 +89,7 @@ export default class Login extends Component {
  }
 
   render(){
-    const {formValid } = this.state;
+    const {formValid, loadingVisible } = this.state;
     const showNotification  =  formValid ? false : true;
     const background = formValid ? colors.green01 : colors.googleColor;
     const notificationMarginTop = showNotification ?  10:0;
@@ -138,6 +144,10 @@ export default class Login extends Component {
           </View>
 
         </View>
+        <Loader
+          modalVisible={loadingVisible}
+          animationType = "fade"
+        />
       </KeyboardAvoidingView>
     );
   }
