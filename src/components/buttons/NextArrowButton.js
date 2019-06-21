@@ -8,7 +8,6 @@ TouchableOpacity,
 TouchableWithoutFeedback,
 StyleSheet,
 Text,
-View,
 } from 'react-native';
 
 export default class NextArrowButton extends Component {
@@ -17,22 +16,20 @@ export default class NextArrowButton extends Component {
    const opacityStyle = disabled ? 0.2 : 0.6;
 
     return (
-      <View style = {styles.buttonWrapper} >
-          <TouchableHighlight
-          style = {[{opacity: opacityStyle}, styles.button]}
-          onPress = {handleNextButton}
-          disabled = {disabled}
+      <TouchableHighlight
+      style = {[{opacity: opacityStyle}, styles.button]}
+      onPress = {handleNextButton}
+      disabled = {disabled}
 
-          >
-          <Icon
-          name = "angle-right"
-          color = {colors.green01}
-          size = {32}
-          style = {styles.icon}
-          />
+      >
+      <Icon
+      name = "angle-right"
+      color = {colors.green01}
+      size = {32}
+      style = {styles.icon}
+      />
 
-          </TouchableHighlight>
-        </View>
+      </TouchableHighlight>
     );
   }
 }
@@ -43,12 +40,6 @@ NextArrowButton.propTypes = {
 };
 
 const styles = StyleSheet.create({
-  buttonWrapper: {
-      alignItems:'flex-end',
-      right: 20,
-      bottom: 1 ,
-
-    },
   button: {
     alignItems: 'center',
     justifyContent: 'center',

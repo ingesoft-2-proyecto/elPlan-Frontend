@@ -17,9 +17,7 @@
     "@fortawesome/react-native-fontawesome": "^0.1.0",
     "expo": "^32.0.6",
     "font-awesome": "^4.7.0",
-    "logger": "^0.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.5.0",
+    "react": "16.5.0",
     "react-fontawesome": "^1.6.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-elements": "^1.1.0",
@@ -29,12 +27,7 @@
     "react-native-svg": "^9.4.0",
     "react-native-vector-icons": "^6.4.2",
     "react-navigation": "^3.11.0",
-    "react-redux": "^7.1.0",
-    "react-router": "^5.0.0",
-    "redux": "^4.0.1",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "types": "^0.1.1"
+    "react-router": "^5.0.0"
   },
   "devDependencies": {
     "@expo/vector-icons": "^10.0.1",
