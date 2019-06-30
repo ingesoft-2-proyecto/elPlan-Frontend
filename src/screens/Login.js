@@ -155,7 +155,7 @@ class Login extends Component {
             disabled = {this.tooggleNextButtonState()}
             />
 
-
+      
 
 
           <View style = {[styles.notificationWrapper,{marginTop: notificationMarginTop }]} >
@@ -166,7 +166,7 @@ class Login extends Component {
                 firstLine = "¡Vaya! Parece que te has equivocado"
                 secondLine = "Por favor, intenta de nuevo."
               />
-              </View>
+          </View>
 
         </View>
         <Loader
