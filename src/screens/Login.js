@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {PropTypes} from 'prop-types';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import colors from '../styles/colors';
+import { transparentHeaderStyle } from '../styles/navigation';
 import{
   View,
   Text,
@@ -9,13 +10,22 @@ import{
   StyleSheet,
   KeyboardAvoidingView,
 } from 'react-native';
+import{connect } from 'react-redux';
+import {bindActionsCreators} from 'redux';
+import {ActionsCreators} from '../redux/actions';
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
 import Loader from '../components/Loader';
 
 
-export default class Login extends Component {
+
+class Login extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    headerStyle: transparentHeaderStyle,
+    headerTintColor: colors.white,
+  });
+
   constructor(props) {
     super(props);
 
@@ -23,6 +33,7 @@ export default class Login extends Component {
       formValid : true,
       validEmail: false,
       emailAddress: '',
+      password: '',
       validPassword: false,
       loadingVisible: false,
 
@@ -37,15 +48,24 @@ export default class Login extends Component {
 
   handleNextButton(){
 
-    this.setState({loadingVisible: true});
+    this.setState({ loadingVisible: true });
+      const { navigate } = this.props.navigation;
 
-    setTimeout (() => {
-    if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
-          alert ('success');
-      this.setState ({formValid: true, loadingVisible: false});
-    } else {
-        this.setState({formValid: false, loadingVisible: false});
-      }
+    	setTimeout(() => {
+        const { emailAddress, password } = this.state;
+        if (this.props.logIn(emailAddress, password)) {
+          this.setState({ formValid: true, loadingVisible: false });
+          navigate('LoggedIn');
+        } else {
+          this.setState({ formValid: false, loadingVisible: false });
+  }
+    //if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
+      //    alert ('success');
+      //this.setState ({formValid: true, loadingVisible: false});
+    //} else {
+      //  this.setState({formValid: false, loadingVisible: false});
+      //}
+
     }, 2000);
   }
 
@@ -70,15 +90,17 @@ export default class Login extends Component {
   }
 
   handlePasswordChange(password) {
+    this.setState({ password });
+
     if (!this.state.validPassword) {
-      if (password.length > 4 ) {
+      if (password.length > 4) {
         //La contraseña no puede ser menor a 4 caracteres
-        this.setState({validPassword: true });
+        this.setState({ validPassword: true });
+            }
+          } else if (password <= 4) {
+            this.setState({ validPassword: false });
+          }
       }
-    } else if (password <= 4) {
-      this.setState({validPassword: false});
-    }
-  }
 
  tooggleNextButtonState (){
    const {validEmail, validPassword } = this.state;
@@ -93,6 +115,8 @@ export default class Login extends Component {
     const showNotification  =  formValid ? false : true;
     const background = formValid ? colors.green01 : colors.googleColor;
     const notificationMarginTop = showNotification ?  10:0;
+  //  console.log(this.props.loggedInStatus);
+
     return(
       <KeyboardAvoidingView
         style= {[{backgroundColor: background},styles.wrapper]}
@@ -132,6 +156,7 @@ export default class Login extends Component {
             />
 
           </View>
+
 
           <View style = {[styles.notificationWrapper,{marginTop: notificationMarginTop }]} >
             <Notification
@@ -195,3 +220,16 @@ bottom: 0,
 
   },
 });
+
+
+const mapStateToProps = (state) => {
+  return {
+    loggedInStatus: state.loggedInStatus,
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(ActionCreators, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);
