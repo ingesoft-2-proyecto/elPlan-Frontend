@@ -9,7 +9,4 @@
 
 # Next Features
 
-  - Manejo google maps
-  - Mas flujos (Comentarios)
-  - Control alertas
 
