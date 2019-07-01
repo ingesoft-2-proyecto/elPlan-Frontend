@@ -9,6 +9,4 @@
 
 # Next Features
 
-  - Manejo google maps
-  - Mas flujos
 
