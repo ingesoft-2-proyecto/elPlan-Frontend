@@ -125,13 +125,12 @@ export default class Login extends Component {
                 onChangeText = {this.handlePasswordChange}
                 />
           </ScrollView>
-          <View style= {styles.nextButton}>
+
           <NextArrowButton
             handleNextButton = {this.handleNextButton}
             disabled = {this.tooggleNextButtonState()}
             />
 
-          </View>
 
           <View style = {[styles.notificationWrapper,{marginTop: notificationMarginTop }]} >
             <Notification
@@ -180,12 +179,6 @@ loginHeader:{
   marginBottom: 40,
 },
 
-nextButton: {
-  alignItems:'flex-end',
-  right: 20,
-  bottom: 1 ,
-
-},
 
 notificationWrapper :{
 position:'absolute',

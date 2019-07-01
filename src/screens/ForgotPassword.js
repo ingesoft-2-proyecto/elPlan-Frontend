@@ -88,12 +88,12 @@ export default class ForgotPassword extends Component {
             />
           </ScrollView>
 
-          <View style = {styles.nextButtonWrapper}>
+
           <NextArrowButton
             handleNextButton={this.goToNextStep}
             disabled={!validEmail}
           />
-          </View>
+      
 
           <View style={styles.notificationWrapper}>
             <Notification
@@ -146,9 +146,5 @@ const styles = StyleSheet.create({
   	bottom: 0,
   },
 
-  nextButtonWrapper:{
-    alignItems: 'flex-end',
-    right: 20,
-    bottom: 20,
-  },
+
 });
