@@ -3,10 +3,22 @@ import { StyleSheet, Text, View, StatusBar , TouchableOpacity, TextInput, Activi
 import Logo from '../components/Logo';
 import {Actions} from 'react-native-router-flux';
 import Expo from "expo";
+import { validateLogin } from "../utils/validation";
+import { Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
 
 export default class Login extends Component {
+
+  constructor(props) {
+    super(props); 
+    this.state = {
+      email: '',
+      password: '',
+      isLoading: false,
+      error: '',
+    };
+  }
 
 	signup() {
 		Actions.signup()
@@ -15,20 +27,18 @@ export default class Login extends Component {
   home() {
     Actions.home()
   }
+  
+  goForm() {
+    if (validateLogin(this.state.password, this.state.email)) {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: 'Correo Electronico',
-      password: 'Contraseña',
-      isLoading: false,
-      error: '',
-    };
+      this.sendData()
+    }
   }
 
   async sendData() {
 
     try {
+
       this.setState(
         {
           isLoading: true
@@ -45,15 +55,17 @@ export default class Login extends Component {
             error: "" 
           }
         )
-        let accessToken = res.jwt
+        let accessToken = res.token
         storeToken(accessToken);
-        console.log("Access Token: " + accessToken)
+        console.log("Access Token's Expiration: " + res.exp)
+        console.log("Access Token's User ID: " + res.user_id)
         this.setState({ isLoading: false })
         this.home()
       } else {
         removeToken()
         this.setState({ isLoading: false })
         this.setState({ error: "Invalid username or Password" })
+        Alert.alert("Correo o contraseña invalida");
       }
 
     } catch (error) {
@@ -66,8 +78,8 @@ export default class Login extends Component {
 	render() {
     if (this.state.isLoading) {
       return (
-        <View>
-          <View style={styles.container}>
+        <View style={styles.container}>
+          <View style={styles.container2}>
             <Text style={styles.headling}>LOGUEANDO...</Text>
             <ActivityIndicator size="large" color="#00CCFF" />
           </View>
@@ -94,9 +106,10 @@ export default class Login extends Component {
             secureTextEntry={true}
             placeholderTextColor="#ffffff"
             onChangeText={(password) => this.setState({ password })}
+            value={this.state.password}
           />
           <TouchableOpacity style={styles.button}
-            onPress={() => this.sendData()}>
+            onPress={() => this.goForm()}>
             <Text style={styles.buttonText}>Login</Text>
           </TouchableOpacity>
         </View>
@@ -164,5 +177,8 @@ const styles = StyleSheet.create({
     fontSize: hp('6%'),
     textAlign: 'center',
     margin: hp('5%'),
+  },
+  containerLoading: {
+
   }
 });
