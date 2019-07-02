@@ -10,9 +10,9 @@ import{
   StyleSheet,
   KeyboardAvoidingView,
 } from 'react-native';
-import{connect } from 'react-redux';
-import {bindActionsCreators} from 'redux';
-import {ActionsCreators} from '../redux/actions';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { ActionCreators } from '../redux/actions';
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
@@ -51,21 +51,21 @@ class Login extends Component {
     this.setState({ loadingVisible: true });
       const { navigate } = this.props.navigation;
 
-    	setTimeout(() => {
-        const { emailAddress, password } = this.state;
-        if (this.props.logIn(emailAddress, password)) {
-          this.setState({ formValid: true, loadingVisible: false });
-          navigate('LoggedIn');
-        } else {
-          this.setState({ formValid: false, loadingVisible: false });
-  }
+    setTimeout (() => {
+const { emailAddress, password } = this.state;
+      if (this.props.login(emailAddress, password)) {
+        this.setState({ formValid: true, loadingVisible: false });
+        navigate('LoggedIn');
+      } else {
+        this.setState({ formValid: false, loadingVisible: false });
+}
     //if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
-      //    alert ('success');
-      //this.setState ({formValid: true, loadingVisible: false});
-    //} else {
-      //  this.setState({formValid: false, loadingVisible: false});
-      //}
 
+  //        alert ('success');
+    //  this.setState ({formValid: true, loadingVisible: false});
+  //  } else {
+    //    this.setState({formValid: false, loadingVisible: false});
+      //}
     }, 2000);
   }
 
@@ -115,8 +115,7 @@ class Login extends Component {
     const showNotification  =  formValid ? false : true;
     const background = formValid ? colors.green01 : colors.googleColor;
     const notificationMarginTop = showNotification ?  10:0;
-  //  console.log(this.props.loggedInStatus);
-
+    console.log(this.props.loggedInStatus);
     return(
       <KeyboardAvoidingView
         style= {[{backgroundColor: background},styles.wrapper]}
@@ -155,7 +154,6 @@ class Login extends Component {
             disabled = {this.tooggleNextButtonState()}
             />
 
-      
 
 
           <View style = {[styles.notificationWrapper,{marginTop: notificationMarginTop }]} >
@@ -206,7 +204,6 @@ loginHeader:{
 },
 
 
-
 notificationWrapper :{
 position:'absolute',
 bottom: 0,
@@ -215,6 +212,8 @@ bottom: 0,
 
   },
 });
+
+
 
 
 const mapStateToProps = (state) => {
@@ -227,4 +226,4 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(ActionCreators, dispatch);
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+//export default connect (mapStateToProps, mapDispatchToProps)(Login);

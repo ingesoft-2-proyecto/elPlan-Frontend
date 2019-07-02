@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
     bottom: 1 ,
 
   },
+
   button: {
     alignItems: 'center',
     justifyContent: 'center',

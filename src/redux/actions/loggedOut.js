@@ -3,7 +3,7 @@ import user from '../../data/user.json';
 
 export function login (email, password) {
   return (dispatch, getState) => {
-    if (email === user.email && password === user.password ) {
+    if (email === user.email && password === user.password) {
       dispatch(setLoggedInState(true));
       return true;
     }
@@ -12,9 +12,9 @@ export function login (email, password) {
   }
 }
 
-export  function setLoggedInState(loggedInState){
-  return{
-    type: types.SET_LOGGUED_IN_STATE,
-    loggedInState,
+export function setLoggedInState(loggedInState) {
+  return {
+  	type: types.SET_LOGGED_IN_STATE,
+  	loggedInState,
   }
 }

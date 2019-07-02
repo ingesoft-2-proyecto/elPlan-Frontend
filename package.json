@@ -18,22 +18,21 @@
     "@fortawesome/react-native-fontawesome": "^0.1.0",
     "expo": "^32.0.6",
     "font-awesome": "^4.7.0",
-    "helpers": "^0.0.6",
     "logger": "^0.0.1",
-    "navigation": "^5.1.1",
     "react": "^16.8.6",
     "react-fontawesome": "^1.6.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-elements": "^1.1.0",
+    "react-native-fbsdk": "^0.10.1",
     "react-native-fontawesome": "^6.0.1",
     "react-native-router-flux": "^4.0.6",
     "react-native-search-bar": "^3.4.2",
     "react-native-svg": "^9.4.0",
     "react-native-vector-icons": "^6.4.2",
     "react-navigation": "^3.11.0",
-    "react-navigation-redux-helpers": "^3.0.2",
     "react-redux": "^7.1.0",
     "react-router": "^5.0.0",
+    "react-router-redux": "^4.0.8",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
@@ -42,7 +41,8 @@
   },
   "devDependencies": {
     "@expo/vector-icons": "^10.0.1",
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+    "schedule": "0.4.0"
   },
   "private": true
 }
