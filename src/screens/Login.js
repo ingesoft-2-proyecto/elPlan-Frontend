@@ -20,7 +20,7 @@ import Loader from '../components/Loader';
 
 
 
-class Login extends Component {
+export default class Login extends Component {
   static navigationOptions = ({ navigation }) => ({
     headerStyle: transparentHeaderStyle,
     headerTintColor: colors.white,
