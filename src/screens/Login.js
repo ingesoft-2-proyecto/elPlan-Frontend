@@ -9,6 +9,9 @@ import{
   StyleSheet,
   KeyboardAvoidingView,
 } from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { ActionCreators } from '../redux/actions';
 import InputField from '../components/form/InputField';
 import NextArrowButton from '../components/buttons/NextArrowButton';
 import Notification from '../components/Notification';
@@ -40,12 +43,20 @@ export default class Login extends Component {
     this.setState({loadingVisible: true});
 
     setTimeout (() => {
-    if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
-          alert ('success');
-      this.setState ({formValid: true, loadingVisible: false});
-    } else {
-        this.setState({formValid: false, loadingVisible: false});
-      }
+const { emailAddress, password } = this.state;
+      if (this.props.login(emailAddress, password)) {
+        this.setState({ formValid: true, loadingVisible: false });
+        navigate('LoggedIn');
+      } else {
+        this.setState({ formValid: false, loadingVisible: false });
+}
+    //if (this.state.emailAddress === 'hello@imandy.ie' && this.state.validPassword){
+
+  //        alert ('success');
+    //  this.setState ({formValid: true, loadingVisible: false});
+  //  } else {
+    //    this.setState({formValid: false, loadingVisible: false});
+      //}
     }, 2000);
   }
 
@@ -93,6 +104,7 @@ export default class Login extends Component {
     const showNotification  =  formValid ? false : true;
     const background = formValid ? colors.green01 : colors.googleColor;
     const notificationMarginTop = showNotification ?  10:0;
+    console.log(this.props.loggedInStatus);
     return(
       <KeyboardAvoidingView
         style= {[{backgroundColor: background},styles.wrapper]}
@@ -188,3 +200,18 @@ bottom: 0,
 
   },
 });
+
+
+
+
+const mapStateToProps = (state) => {
+  return {
+    loggedInStatus: state.loggedInStatus,
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators(ActionCreators, dispatch);
+};
+
+//export default connect (mapStateToProps, mapDispatchToProps)(Login);
