@@ -27,12 +27,13 @@
     "react-native-router-flux": "^4.0.6",
     "react-native-search-bar": "^3.4.2",
     "react-native-svg": "^9.4.0",
-    "react-native-vector-icons": "^6.4.2",
-    "react-navigation": "^3.11.0",
+    "react-native-vector-icons": "^6.6.0",
+    "react-navigation": "^3.11.1",
+    "react-navigation-redux-helpers": "^3.0.2",
     "react-redux": "^7.1.0",
     "react-router": "^5.0.0",
     "react-router-redux": "^4.0.8",
-    "redux": "^4.0.1",
+    "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "save": "^2.4.0",
@@ -41,6 +42,10 @@
   "devDependencies": {
     "@expo/vector-icons": "^10.0.1",
     "babel-preset-expo": "^5.0.0",
+    "detox": "^13.1.1",
+    "detox-expo-helpers": "^0.6.0",
+    "expo-detox-hook": "^1.0.10",
+    "jest": "^24.8.0",
     "schedule": "0.4.0"
   },
   "private": true
