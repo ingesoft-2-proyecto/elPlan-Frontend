@@ -1,0 +1,1283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.0.0_32dd4eb17baf9e5d426136674e5faf89a44e190e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_3b4b974ec01bb6790e0236159febb8b3cd30d59e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_421e34b82f7a4422ba56d51cd310ea655d949f3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_05b837e9e3ce0e0a238473d6269b788f123b85ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_37ee35cdcfba0e72a8465b9ba7e0fb75a5275851.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_5b739414a4ad2c913a749649f5fe7dbdf774c6df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_6fa0225bfcd2411a974cc961c6137bb24a8d84f1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.6_ab361840c6111018d152d70f339c03e5ab438d09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_e00414673b2649a6f4982f555f3a4fa2d748eac5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_36704527d20aa5f5a7704e65b3d5ad8df7249c05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_fbe716b11d6cf2ae5e2a96217bb18ef1be4c012b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_3ba3f3bba136f3bd302efc5d29f71dac0c8e9af9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_f7fb4f958191802d5489063d57edf62728961f58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_333bd0105ac49fabbc044676ce92a95a24441e72.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_b3923ac335aa8e45cfa2b24574e6050e3fe28307.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.github.thefuntasty/CreditCardEntry/1.4.8.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9111e38999fee0b16a1ccd057b779f5b08f330e2">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.github.thefuntasty-CreditCardEntry-1.4.8.4_b5bd52af9baaeabef090f6ee6fcb894f3d23ec24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="553e58050e91d4295a2f1d1f80ea63b41ee5bc4b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.2.6_0329fcda4bf23ea3788007d1082e84c5313e308d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_f23dc1cf2ed635d008f133ca0dab21c608af826a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_dbd06ff1e0e7df5cf59fff60843b629d261e9924.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_91877d53ea1dc2cbaca98fac07a8e65172c00fdf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-fbsdk/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2ecb942fd7c9034673bfa12ff48556498a83754d">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-fbsdk-unspecified_fb169023d4316addebfe48b53a78ee7dc46df84d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_ca4a53bf8efc485e32eb1ca5feff7080e9a10dac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_bd72fe6c10ed27c9aa66ce10548b7d578fd9d3ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_5cfe3c4273ffb701a7dd3e40bf97dbca87897ba1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.stripe/stripe-android/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a2f9209ff0d33539df6866d019181ecd1ecd047">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.stripe-stripe-android-2.1.0_bd8df01fd384f50980868a572b1038e6b1676076.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_9c3caddd4d0179f676eaab1f53ede12370d765b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_0f6ae4647c2911a33bf448e22af2f463468dee35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="59fb5de39c8be70d7bf5544de8051213c37aa3b9">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-tipsi-stripe-unspecified_1277e65fdd57e2fa59e697ea2623d869ad63b5d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.github.thefuntasty/CreditCardEntry/1.4.8.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9111e38999fee0b16a1ccd057b779f5b08f330e2">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.github.thefuntasty-CreditCardEntry-1.4.8.4_29b6f41618aa6f3028e47063120b4aa1e124869a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.22.1_caeaf1509abed0a164841ede179b50bcf099af3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_3ff5a4c5dba05b4fdaf8c00fbf28b340ab958a45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_91d981f918313ea5b8f62cce925011b8e79e1bd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_9bb2e090b975b405d134dbdda66beca58fe9a1d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_683f55206978fee7d90223870c67593f8c903bc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_f2e7a644b5438965f4e84382255b733d2ebf378e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7c76f885bccfa2ac3e144e2b654704110cd2d9d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.0.0_14b1617e64fbcbc83c8054d29b38e115fbe8c2b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.6_21e7011766b31dfbc3d2772e4e2c2282806e6ff4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_94f978f5a01332d2ff3eb70736f3efcad694a72d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_75152df215ff003cea1343bdad3f738777f3f2f2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_44f4bf6e88797178500605e97e07d8397aad00c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_c679c4ad5cda509997d92bd46cfbcb8db078670b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_142dfeec728c7d24a6a88993654d4311f1842b54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_ffdbc052fbf90e0e933cf4eae846c9eb4120c35a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.6_dfbfc531936b4bd6e36f10517ae977a5268b54f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.22.1_00fed9dbbc77f0b829c3a3403887a7517f25234e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_601ea6beb5fca3e918ea30f12ead998e9130d451.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_cb1f2fd990ae7c94a859208befda6c8be6db6684.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="59fb5de39c8be70d7bf5544de8051213c37aa3b9">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-tipsi-stripe-unspecified_5b1abd60dd01871ad5e2231c9ea4c2034b47f3bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_150c78812d04cb6436c98c64adc97f78668690bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0c6924cbba8248329a8c58ead6a380efe7eee76e">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-10.2.6_968b89e3265b48c2d59fc203c3c5891542ee6df0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_dfd41f8b6886b37cb2e92e5e7529ccd2fffe06c5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-fbsdk/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2ecb942fd7c9034673bfa12ff48556498a83754d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-fbsdk-unspecified_be1a05a654ad2a82afede74869d5c82a121356f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_6d6fc14763a20c1e32a6881f0ceae6a559778ce6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="553e58050e91d4295a2f1d1f80ea63b41ee5bc4b">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.2.6_f001f90d26b2457f371c08a88aaeb4449fedfeac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0eb8b794ee90968d905fb2f8c2370ad2eeba51ce">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-vector-icons-unspecified_582e6cdbc29928cade2d32c8c50255c0a70f6719.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.0.0_2de89bfe0eff54960edd9f893370f3ac37a119ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_d37863609e983ab9cf347d8eb970a2c179c65057.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_cc08de6b6ecb46e3502d48cab3bb443dd6d8da98.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_ee602e3140306f9f3ab78a91af52447d71cdcbef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.22.1_9929c04818fd68c83fdd990b3e56b2802d812646.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0eb8b794ee90968d905fb2f8c2370ad2eeba51ce">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-vector-icons-unspecified_5cbb1c64308d70ce3e6953b60361671bf8dbb304.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_384e769b5d3801e8f92f5f7482a52c64aa4562a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_e0377b6338f4658f78ab3d6dbee7a4c0d6814740.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-fbsdk/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2ecb942fd7c9034673bfa12ff48556498a83754d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-fbsdk-unspecified_81fd51b1dce67a824d4abefccb91433180897458.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8a82df715776d62e4518da25de23b0be955d19c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.github.thefuntasty/CreditCardEntry/1.4.8.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9111e38999fee0b16a1ccd057b779f5b08f330e2">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.github.thefuntasty-CreditCardEntry-1.4.8.4_d1c90de054524b5c288eb4ebd2287b854f2657bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_b7c86147b5e0c15e3cc6e7ae6d67d515abd55330.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="59fb5de39c8be70d7bf5544de8051213c37aa3b9">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-tipsi-stripe-unspecified_2cf8ae9b3ca529f5a343bc064a98d2e155622acc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_fd7800065ed88bdc27e3ee28ee89d827b8872d00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_78b6178ce56bf632b6140991d294e31c647c0025.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_2588b1d7d030255529435a2debbd019a2286c161.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.2.6_3add1b5084b2aa245ed6d959a236b946a51ba33b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_0978cf2a797f1a5c0e455e69bfac029af571cf58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.0_1933ddb13df795734611d0bb4341fae6e4be3cac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.stripe/stripe-android/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a2f9209ff0d33539df6866d019181ecd1ecd047">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.stripe-stripe-android-2.1.0_938fb1986c73d76572446d70ae9250d118896ce5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_fa28095decaa0c82f6470bc9f1d5130274cc6479.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0eb8b794ee90968d905fb2f8c2370ad2eeba51ce">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-vector-icons-unspecified_f29b918beae2275e12fbcaf0c09e8bef0410468a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_e49736526e0c9b88b1a484fb8c32b41b142a87ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.2.6_1c8bd5392a7011fd0eaa653d1363cd55ac27b32b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_979a5292b57fec05fdc1ee7f678e5df206c28794.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_ca017876c214d8a5502839bdb0cb3752ee0697c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_6372fbd7d89b308030b11e337724c8bb8ec52839.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d5cbc9214ee567ea6ef56fb2707d48e58d240fc2">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.22.1_53ba3e924cd92685ee9952ab2e8d79510c6e4f0d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_c2ea73c653114a86d9e728db70d73871208bdb50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="553e58050e91d4295a2f1d1f80ea63b41ee5bc4b">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.2.6_8436ad7629c7daa162eb10b86df0dc42a9028195.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_0f9a62d0214b3da666e98f5b6746f81172060906.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_ecc09cd163cc39f789ccaf9fb3bb2c7a450e0d27.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.0_eddca1ab22db51b37e3ce170fdecaca839649477.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_7c232d667a2dfa7bcbfef6b49f525dcf3e3a2826.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_991de3b8bffef9b441e6ce615a3adf18e0a782ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_b7337fcaf6af424e04001b3eb4442c0015a0045b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_b64f67706b3780efe419a2d9643bfd4ecc43a0a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.2.6_ae7ca84c9afd8ac945797e26de66a53676bf4494.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_8bb6b264cc6e2b0976224f9de65dd9a5d8ec8745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_78a4e0be07c19d3222b595177508d11c04652e54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_0e356a3349e35e422d1a3624bae09e6e643fa029.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_bd004588b83f066b810e2a03e5476188cadf61a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_fb06e32daedaf8b5f0b942ff091c0d664916fe99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_ce8ec84236e20ccb4ee29dbacb1e37aa8af0fd8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_c45a11e26d207bacc4b1887dced981c6981e72d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_893621de4d51a56843f8d8e4e5309eb02a0dfe83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_59f6fde79157c69eb907004b646e9f8bc37b2235.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.0.0_128a9a5426e74fd4c85207cea67097d52f92a938.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_c587b0890bbe6a21861d1c650a79c0f1a9532c0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0eb8b794ee90968d905fb2f8c2370ad2eeba51ce">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-vector-icons-unspecified_fb50975ce66cf35eeb490cb86e3494d60b316e29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_c2f036911fe12551e08f8e1b7c380ee87a02cd75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_46e2a9bd22f3f2ee81e1a3d6ca91558ff5f71cee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="553e58050e91d4295a2f1d1f80ea63b41ee5bc4b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-10.2.6_217553f06533c1150efe0ce133c10bd94fe4cb5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_a15a608a852b52b6364c24be07f5e30520a1604a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_9f49d37f563b5bf2611bd77d254175026281d498.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/customtabs/25.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.0.0_926b91bbff9d607787a7f4bd9193e4821ea844a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.2.6_1a7dbe20c68ed5ecfb89bf268ad35f20b24bd23d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.0_773d674cc7ee40f967cac1c1c8e4ae3d8710276f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_7a92881f5f2e5806378dfa0640d58c4aa593e7f9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-10.2.6_792bea0b799e7bfe3f5fcc3cda11fb7ae32d8cf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/react-native-fbsdk/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2ecb942fd7c9034673bfa12ff48556498a83754d">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-react-native-fbsdk-unspecified_7c66094af9d90ee12850d527644595d0a40a8172.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.6_34ed7693f7b195909fb685a885a4270bd5fac626.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_56c92832f164ed4aa95575015ec34be7f389b96e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_75fbcfec4e36f57ffe4d1239df83c89da53ebdce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_d028be46912b34b9114afbdc833f8e7ec5a694f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_d7f02bdded4a6be4c4e963a3e51408c3f8554451.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_90745004ee71573b5439e5c68df9abab1f8fb8bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_ffa476558643ce22a237ef526bdb4a30448c5fe3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_b262db49681e122e2f00ceaa3b0645adba791815.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_e01c1750b2751533b2f69601c04d3bafc45b4d86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="af9665a44df26b4098e24c934c1109507845ef5e">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.44.0_7de930cee8aaffec2303006c3ed6290d9fef277c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_82ecf9967e72a34b78c655154cacdd2ae15a4769.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="59fb5de39c8be70d7bf5544de8051213c37aa3b9">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/Code4StartupReactNativeBoilerplate-tipsi-stripe-unspecified_cdb48f9402a5051a7a1c9b5dd2c07dc759fe6489.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_c835386c60346fb81c464be3e6db133a0a59ac55.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_1b435416ee5d98a4f30da82f76cecd213bc17971.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_442ed6f58c7f4ece6e2a3d6a6be0b2405aef6087.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.stripe/stripe-android/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a2f9209ff0d33539df6866d019181ecd1ecd047">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.stripe-stripe-android-2.1.0_f475e80d1caed128d872858e88f01938ad52c9e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.44.0/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_f59c929a035774b8ea5b5c9f96c0494ba9c7cd79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.stripe/stripe-android/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6a2f9209ff0d33539df6866d019181ecd1ecd047">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.stripe-stripe-android-2.1.0_4dc0d45c74feaa1912bf4a3d197b979e4c2ace1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.github.thefuntasty/CreditCardEntry/1.4.8.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9111e38999fee0b16a1ccd057b779f5b08f330e2">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.github.thefuntasty-CreditCardEntry-1.4.8.4_37cac4ad135d39af78b16ad97f377178163d8d8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.2.6_b11172612ef5e476f9f1980942e3e55bf179ce3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_561451136998e25b805db84d179af92108b799fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_d3f6d692188b6e1b4f34a47630d0e412efb592dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_6ac362f4597090730a73abe5b602cd4423158908.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_cdad808f15647f426b73e2512e195b205ba4d683.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/carlos/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_0185b5110ae4b35a760da2e69b83c6d496e6e746.jar" />
+    </item>
+
+</items>

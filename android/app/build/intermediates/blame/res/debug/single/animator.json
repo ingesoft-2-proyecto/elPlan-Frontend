@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_in.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_in.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_out.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_in.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_out.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_out.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_out.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_in.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_in.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_out.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_in.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_in.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_out.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_right_in.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_right_in.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_out.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_out.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/animator/card_flip_left_out.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/Code4StartupReactNativeBoilerplate/tipsi-stripe/unspecified/res/animator/card_flip_left_out.xml"
+    }
+]

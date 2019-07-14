@@ -1,0 +1,418 @@
+[
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.22.1/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_default.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_spinner.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.6/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/Airbnb/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/10.2.6/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/carlos/Unal/IngenieriaSoftwareII/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/carlos/Escritorio/Part 2 - Mobile Project/Part 2 - Mobile Project/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/carlos/Escritorio/ElPlan- front/elPlan-Frontend/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/res/color/abc_primary_text_material_dark.xml"
+    }
+]
