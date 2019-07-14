@@ -8,7 +8,7 @@ import {
   Text,
 } from 'react-native';
 
-import { navigate } from '../actions/nav';
+import { navigate } from '../../actions/nav';
 
 const styles = StyleSheet.create({
   container: {
@@ -29,7 +29,7 @@ const items = [
   {id: 2, title: 'Awesome!'},
 ];
 
-class ListTab extends Component {
+class ExploreTab extends Component {
 
   constructor(props) {
     super(props);
@@ -47,7 +47,7 @@ class ListTab extends Component {
       <FlatList
         style={styles.container}
         data={this.state.items}
-        renderItem={({item}) => 
+        renderItem={({item}) =>
           <TouchableOpacity onPress={() => this.onPress(item)} style={styles.item}>
             <Text>{item.title}</Text>
           </TouchableOpacity>
@@ -66,4 +66,4 @@ const mapDispatchToProps = dispatch => ({
   navigate: (route) => dispatch(navigate(route)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListTab);
+export default connect(mapStateToProps, mapDispatchToProps)(ExploreTab);
