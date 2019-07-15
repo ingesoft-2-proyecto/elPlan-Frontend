@@ -14,8 +14,8 @@ const tabConfig = {
   tabBarPosition: 'bottom',
   tabBarOptions: {
     showIcon: true,
-    activeTintColor: '#FF5A60',
-    inactiveTintColor: '#3A3A3A',
+    activeTintColor: '#1ca1f2',
+    inactiveTintColor: '#8899a6',
     labelStyle: {
       fontSize: 10,
       fontWeight: 'bold'
@@ -23,11 +23,11 @@ const tabConfig = {
     tabStyle: {
       paddingBottom: 0,
       borderTopWidth: 1,
-      borderTopColor: 'lightgray',
-      backgroundColor: 'white'
+      borderTopColor: '#1ca1f2',
+      backgroundColor: '#16212c'
     },
     style: {
-      backgroundColor: 'white',
+      backgroundColor: '#16212c',
     },
   },
 }
