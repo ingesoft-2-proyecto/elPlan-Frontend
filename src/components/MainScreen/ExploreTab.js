@@ -56,7 +56,7 @@ content: {
 class ExploreTab extends Component {
 
   onPress(item) {
-    this.props.navigate({ routeName: "Detail", params: { item: item } });
+    this.props.navigate({ routeName: "Event", params: { item: item } });
   }
 
   render() {
