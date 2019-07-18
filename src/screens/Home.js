@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -11,7 +11,8 @@ import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
-import { getEvents, getFilter } from '../utils/events';
+import { getEvents, getFilter, setEventPicture } from '../utils/events';
+import { API_EVENTS } from '../config/const';
 
 export default class Home extends Component {
 
@@ -23,6 +24,8 @@ export default class Home extends Component {
       source: { uri: ''},
       search: '',
       error: '',
+      dataset: null,
+      datasetState: null,
     };
 
   }
@@ -71,34 +74,6 @@ export default class Home extends Component {
         }
       )
       console.log("Home | User id: " + id)
-      let filter = await getFilter();
-      switch(filter) {
-
-        case "0":
-
-          let response = await getEvents()
-          console.log("Get Events | Response status: " + response.status)
-          let status = response.status;
-          if (status >= 200 && status < 300) {
-            let res = await response.json();
-            console.log("Existen " + res.length() + " eventos en total")
-            this.setState(
-              {
-                error: "",
-                events_list: res,
-              }
-            )
-          } else {
-            this.setState({ error: "Invalid events" })
-            Alert.alert("No cargaron los eventos")
-          }
-          break;
-
-        default:
-          break;
-      }
-
-
     } catch (error) {
       console.log("Home | error: " + error)
     }
@@ -148,19 +123,19 @@ export default class Home extends Component {
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
         </View>
-
-        <View style={styles.abajo}>
-          <View style={styles.homeTextCont2}>
-            <TouchableOpacity onPress={this.home}>
-              <Text style={styles.icons}> HOME </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.events}>
-              <Text style={styles.icons}> NEW EVENT </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.home}>
-              <Text style={styles.icons}> SEARCH </Text>
-            </TouchableOpacity>
-          </View>
+        <View>
+          
+        </View>
+        <View style={styles.signupTextCont}>
+          <TouchableOpacity onPress={this.home}>
+            <Text style={styles.icons}> HOME </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.events}>
+            <Text style={styles.icons}> NEW EVENT </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.home}>
+            <Text style={styles.icons}> SEARCH </Text>
+          </TouchableOpacity>
         </View>
       </View>
     )
@@ -188,9 +163,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: wp('5%'),
     paddingVertical: hp('2%'),
-  },
-  abajo: {
-      alignContent: 'flex-end',
   },
   homeTextCont: {
     justifyContent: 'space-between',
