@@ -9,7 +9,7 @@ import { ImagePicker, Permissions, Constants } from 'expo';
 import SwitchSelector from "react-native-switch-selector";
 import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
+import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
 
 export default class Signup extends Component {
 
@@ -20,10 +20,10 @@ export default class Signup extends Component {
             age: 0, //ya
             date: '', //ya
             lastname: '', //ya 
-            password: '123456789', //ya
+            password: '', //ya
             notifications: 'T',
-            confirmpassword: '123456789', //ya
-            email: 'prueba@gmail.com', //ya
+            confirmpassword: '', //ya
+            email: '', //ya
             isLoading: false, //ya
             isSignup: false, //ya
             imageUri: null,
@@ -160,6 +160,8 @@ export default class Signup extends Component {
                     let reslogin = await resToken.json();
                     let accessToken = reslogin.token
                     storeToken(accessToken);
+                    storeID(reslogin.user_id);
+
                     console.log("Access Token's Expiration: " + reslogin.exp)
                     console.log("Access Token's User ID: " + reslogin.user_id)
 
@@ -169,7 +171,7 @@ export default class Signup extends Component {
                         let statuspicture = responsepicture.status;
                         console.log("res picture status: " + statuspicture);
 
-                        if (response.status >= 200 && response.status < 300) {
+                        if (statuspicture >= 200 && statuspicture < 300) {
                             
                             this.setState({ errors2: [] })
                             console.log("Foto de perfil subida");
@@ -229,8 +231,8 @@ export default class Signup extends Component {
 
         if (this.state.isLoading) {
             return (
-                <View>
-                    <View style={styles.container}>
+                <View style={styles.container}>
+                    <View style={styles.container2}>
                         <Text style={styles.headling}>REGISTRANDO...</Text>
                         <ActivityIndicator size="large" color="#00CCFF" />
                     </View>
