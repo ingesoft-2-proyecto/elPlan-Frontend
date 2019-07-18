@@ -8,4 +8,3 @@
 
   - Manejo google maps mejorado
   - Notificaciones
-
