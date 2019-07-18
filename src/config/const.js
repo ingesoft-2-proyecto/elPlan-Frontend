@@ -6,4 +6,5 @@ export const API_EVENTS = `${API}/events`;
 export const API_EVENTOS_CATEGORIES = `${API}/categories`;
 export const API_EDAD_USUARIOS = `${API}/searchage`;
 export const API_USERS_PICTURE = `${API}/user_image`;
-
+export const API_SEARCH_EVENTS_PRICE = `${API}/statistic_cost`;
+export const SEARCH_PRUEBA = `5.6`;

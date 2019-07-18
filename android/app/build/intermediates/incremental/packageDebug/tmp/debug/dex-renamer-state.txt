@@ -1,0 +1,4 @@
+#Thu Jul 18 10:54:11 COT 2019
+base.0=/home/carlos/Varios/workspace/TutorialFront/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
