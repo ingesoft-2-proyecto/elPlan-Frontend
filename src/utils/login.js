@@ -3,6 +3,25 @@ import { AsyncStorage } from 'react-native';
 import { API_LOG_IN } from '../config/const';
 
 const ACCESS_TOKEN = 'access_token';
+const ID = 'id';
+
+export const storeID = async (id) => {
+    try {
+        await AsyncStorage.setItem(ID, id.toString());
+    } catch (error) {
+        console.log("storeId | Something went wrong")
+    }
+}
+
+export const getIDToken = async () => {
+    try {
+        let id = await AsyncStorage.getItem(ID);
+        console.log("getId | Id is: " + id)
+        return id
+    } catch (error) {
+        console.log("Something went wrong")
+    }
+}
 
 export const storeToken = async (accessToken) => {
     try {

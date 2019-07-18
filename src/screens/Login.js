@@ -6,15 +6,15 @@ import Expo from "expo";
 import { validateLogin } from "../utils/validation";
 import { Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
-import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
+import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
 
 export default class Login extends Component {
 
   constructor(props) {
     super(props); 
     this.state = {
-      email: '',
-      password: '',
+      email: 'lahiguarans@unal.edu.co',
+      password: '123456',
       isLoading: false,
       error: '',
     };
@@ -56,9 +56,11 @@ export default class Login extends Component {
           }
         )
         let accessToken = res.token
+        let idtoken = res.user_id
         storeToken(accessToken);
+        storeID(idtoken);
         console.log("Access Token's Expiration: " + res.exp)
-        console.log("Access Token's User ID: " + res.user_id)
+        console.log("Access Token's User ID: " + idtoken)
         this.setState({ isLoading: false })
         this.home()
       } else {
