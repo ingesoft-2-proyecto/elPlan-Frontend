@@ -151,7 +151,7 @@ export default class Signup extends Component {
             console.log("res status: " + status);
 
             switch (status) {
-                case 201:
+        case 201:
 
                     this.setState({ errors: [] })
                     console.log("Nuevo usuario creado");

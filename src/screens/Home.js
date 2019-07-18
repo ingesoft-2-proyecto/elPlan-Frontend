@@ -11,6 +11,7 @@ import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
+import { getEvents, getFilter } from '../utils/events';
 
 export default class Home extends Component {
 
@@ -21,6 +22,7 @@ export default class Home extends Component {
       name: '',
       source: { uri: ''},
       search: '',
+      error: '',
     };
 
   }
@@ -29,8 +31,8 @@ export default class Home extends Component {
     Actions.advanced_filter()
   }
 
-  notifications() {
-    Actions.notifications()
+  events() {
+    Actions.events()
   }
 
   home() {
@@ -69,6 +71,34 @@ export default class Home extends Component {
         }
       )
       console.log("Home | User id: " + id)
+      let filter = await getFilter();
+      switch(filter) {
+
+        case "0":
+
+          let response = await getEvents()
+          console.log("Get Events | Response status: " + response.status)
+          let status = response.status;
+          if (status >= 200 && status < 300) {
+            let res = await response.json();
+            console.log("Existen " + res.length() + " eventos en total")
+            this.setState(
+              {
+                error: "",
+                events_list: res,
+              }
+            )
+          } else {
+            this.setState({ error: "Invalid events" })
+            Alert.alert("No cargaron los eventos")
+          }
+          break;
+
+        default:
+          break;
+      }
+
+
     } catch (error) {
       console.log("Home | error: " + error)
     }
@@ -118,16 +148,19 @@ export default class Home extends Component {
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.signupTextCont}>
-          <TouchableOpacity onPress={this.home}>
-            <Text style={styles.icons}> HOME </Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.notifications}>
-            <Text style={styles.icons}> NOTIFICATIONS </Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.home}>
-            <Text style={styles.icons}> SEARCH </Text>
-          </TouchableOpacity>
+
+        <View style={styles.abajo}>
+          <View style={styles.homeTextCont2}>
+            <TouchableOpacity onPress={this.home}>
+              <Text style={styles.icons}> HOME </Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this.events}>
+              <Text style={styles.icons}> NEW EVENT </Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={this.home}>
+              <Text style={styles.icons}> SEARCH </Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     )
@@ -147,6 +180,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 16,
     flexDirection: 'row'
+  },
+  homeTextCont2: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    display: 'flex',
+    alignItems: 'center',
+    paddingHorizontal: wp('5%'),
+    paddingVertical: hp('2%'),
+  },
+  abajo: {
+      alignContent: 'flex-end',
   },
   homeTextCont: {
     justifyContent: 'space-between',
@@ -250,10 +294,10 @@ const styles = StyleSheet.create({
     width: hp('8%'),
     // marginTop: hp('6%'),
     // marginBottom: hp('6%'),
-    borderRadius: 30,
+    borderRadius: 25,
     overflow: "hidden",
     borderWidth: 1,
-    borderColor: '#00CCFF'
+    borderColor: '#FFFFFF'
   },
   switch: {
     width: wp('60%'),
