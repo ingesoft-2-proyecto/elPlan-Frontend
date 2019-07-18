@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import colors from '../styles/colors';
 import {
@@ -7,6 +8,7 @@ import {
   Image,
   TouchableHighlight,
 } from 'react-native';
+const FB_APP_ID = 'fb2860165380720120';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 //import { Icon } from 'react-native-elements';
@@ -15,8 +17,25 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import SocialMediaButton from '../components/buttons/SocialMediaButton';
 
 export default class LoggedOut extends Component {
-  onFacebookPress(){
-    alert('El boton de facebook ');
+  async onFacebookPress(){
+    const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(
+    "2860165380720120",
+    {
+      permissions: ["public_profile"]
+    }
+  );
+  if (type === "success") {
+    const response = await fetch(
+      `https://graph.facebook.com/me?access_token=${token}&fields=id,name,birthday,picture.type(large)`
+    );
+    const { picture, name, birthday } = await response.json();
+    Alert.alert(
+      'Logged in!'
+      
+    )
+  } else {
+    // Handle errors here.
+  }
   }
 
   onGooglePress(){
@@ -40,11 +59,11 @@ export default class LoggedOut extends Component {
     return (
   <View style = {styles.wrapper}>
       <View style={styles.welcomeWrapper} >
-            
+
                <Text style={styles.welcomeText}>¿Sin nada que hacer?</Text>
                <Text style={styles.subwelcomeText}>Obten ideas de actividades personalizadas en tus gustos</Text>
                <RoundedButton
-                 text="Comenzar"
+                 text="¿Tienes una cuenta? Ingresa aqui"
                  textColor={colors.green01}
                  background={colors.white}
                  //icon = <Icon name="street-view" size={20} style={styles.facebookButtonIcon} />
@@ -58,9 +77,10 @@ export default class LoggedOut extends Component {
                      icon = <Icon name="facebook" size={50} style={styles.facebookButtonIcon}  />
                     handleOnPress={this.onFacebookPress}
                    />
-                   <SocialMediaButton
-                     icon = <Icon name="google" size={50} style={styles.googleButtonIcon} />
-                   handleOnPress={this.onGooglePress}
+
+                 <SocialMediaButton
+                     //icon = <Icon name="google" size={50} style={styles.googleButtonIcon} />
+                   //handleOnPress={this.onGooglePress}
                    />
                </View>
 
@@ -72,13 +92,6 @@ export default class LoggedOut extends Component {
                />
 
 
-             <TouchableHighlight
-               style={styles.singInButton}
-               onPress={this.singInButtonPress}
-               >
-               <Text style={styles.singInButtonText}> ¿Ya tienes una cuenta? Ingresa aqui </Text>
-
-           </TouchableHighlight>
 
 
       </View>
@@ -91,14 +104,14 @@ const styles = StyleSheet.create ({
   wrapper:{
     flex:1,
     display: 'flex',
-    backgroundColor: colors.green01,
+    backgroundColor: '#707070',
 
   },
 
   welcomeWrapper:{
     flex: 1,
     display: 'flex',
-    marginTop: 30,
+    marginTop: 80,
     padding: 20,
 
 
@@ -108,7 +121,7 @@ const styles = StyleSheet.create ({
     fontSize: 30,
     color: colors.white,
     fontWeight: '300',
-    marginBottom: 10,
+    marginBottom: 30,
 
   },
 
@@ -161,11 +174,5 @@ const styles = StyleSheet.create ({
 
   },
 
-  logo:{
-    width: 80,
-    height: 80,
-    marginTop: 10,
-    marginBottom: 10,
 
-  }
 });
