@@ -10,6 +10,7 @@ import Menu from '../screens/Menu';
 import Notifications from '../screens/Notifications';
 import Advanced_filter from '../screens/Advanced_filter';
 import Events from '../screens/Events';
+import ProfileUpdate from '../screens/ProfileUpdate';
 
 export default class Routes extends Component<{}> {
 	render() {
@@ -25,6 +26,7 @@ export default class Routes extends Component<{}> {
 						<Scene key="notifications" component={Notifications} title="notifications" />
 						<Scene key="advanced_filter" component={Advanced_filter} title="advanced_filter" />
 						<Scene key="events" component={Events} title="events" />
+						<Scene key="profileupdate" component={ProfileUpdate} title="profileupdate" />
 					</Stack>
 			 </Router>
 			)

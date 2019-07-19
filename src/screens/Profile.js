@@ -3,10 +3,10 @@ import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity
 import { Actions } from 'react-native-router-flux';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
-import { setUserData, getName, getID, setUserPicture, getUrl } from '../utils/home';
+import { setUserData, getName, getID, setUserPicture, getUrl, getAge, getEmail, getLastname } from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
 
-export default class Home extends Component {
+export default class Profile extends Component {
 
   constructor(props) {
     super(props);
@@ -24,8 +24,8 @@ export default class Home extends Component {
   }
 
 
-  events() {
-    Actions.events()
+  notifications() {
+    Actions.notifications()
   }
 
   home() {
@@ -36,8 +36,8 @@ export default class Home extends Component {
     Actions.menu()
   }
 
-  profile() {
-    Actions.profile()
+  profileupdate() {
+    Actions.profileupdate()
   }
 
   async componentWillMount() {
@@ -52,18 +52,24 @@ export default class Home extends Component {
     )
     try {
       let token = await getToken()
-      console.log("Profile | token: " + token)
+      console.log(token)
       await setUserData(token);
       let id = await getID();
+      console.log(id)
       await setUserPicture(id);
       let link = await getUrl();
+      console.log(link)
       this.setState(
         {
           name: await getName(),
+          lastname: await getLastname(),
+          age: await getAge(),
+          email: await getEmail(),
           source: { uri: `${link}` + '?' + new Date() }
         }
       )
       console.log("Profile | User id: " + id)
+      console.log("Profile | User age: " + age)
     } catch (error) {
       console.log("Profile | error: " + error)
     }
@@ -80,7 +86,7 @@ export default class Home extends Component {
       return (
         <View style={styles.container}>
           <View style={styles.container2}>
-            <Text style={styles.headling}>CARGANDO INFO USUARIO...</Text>
+            <Text style={styles.headling}>INGRESANDO PERFIL...</Text>
             <ActivityIndicator size="large" color="#00CCFF" />
           </View>
         </View>
@@ -89,32 +95,35 @@ export default class Home extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.profileTextCont}>
-          <Text style={styles.icons}>{this.state.fullname}</Text>
-          <TouchableOpacity onPress={this.profile}>
-            <Text style={styles.icons}>UPDATE</Text>
+          <Text style={styles.icons2}>{`${this.state.name}_${this.state.lastname}`}</Text>
+          <TouchableOpacity onPress={this.profileupdate}>
+            <Text style={styles.signupButton2}>UPDATE</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.container3}>
-          <TextInput style={styles.searchBox}
-            underlineColorAndroid='rgba(0,0,0,0)'
-            placeholder="Are you looking for an event?"
-            maxLength={100}
-            placeholderTextColor="#ffffff"
-            selectionColor="#fff"
-            keyboardType="default"
-            onChangeText={(search) => this.setState({ search })}
-            value={this.state.search}
-          />
-          <TouchableOpacity style={styles.buttonFilters}
-            onPress={() => this.advanced_filter()}>
-            <Text style={styles.buttonText}>Advanced Filters</Text>
-          </TouchableOpacity>
+          <Image style={styles.profilePhoto2} source={this.state.source} />
+        </View>
+        <View style={styles.profileTextCont2}>
+          <Text style={styles.icons2}>NAME: </Text>
+          <Text style={styles.signupButton2}>{this.state.name}</Text>
+        </View>
+        <View style={styles.profileTextCont2}>
+          <Text style={styles.icons2}>LASTNAME: </Text>
+          <Text style={styles.signupButton2}>{this.state.lastname}</Text>
+        </View>
+        <View style={styles.profileTextCont2}>
+          <Text style={styles.icons2}>AGE: </Text>
+          <Text style={styles.signupButton2}>{this.state.age}</Text>
+        </View>
+        <View style={styles.profileTextCont2}>
+          <Text style={styles.icons2}>EMAIL: </Text>
+          <Text style={styles.signupButton2}>{this.state.email}</Text>
         </View>
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.events}>
+          <TouchableOpacity onPress={this.notifications}>
             <Text style={styles.icons}> NOTIFICATIONS </Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.home}>
@@ -158,15 +167,24 @@ const styles = StyleSheet.create({
     paddingBottom: wp('3%'),
     backgroundColor: '#00CCFF',
   },
-  homeTextCont: {
+  profileTextCont: {
     justifyContent: 'space-between',
+    flexDirection: 'row',
+    display: 'flex',
+    alignItems: 'center',
+    paddingHorizontal: wp('5%'),
+    paddingTop: wp('6%'),
+    paddingBottom: wp('3%'),
+  },
+  profileTextCont2: {
+    justifyContent: 'flex-start',
     flexDirection: 'row',
     display: 'flex',
     alignItems: 'center',
     paddingHorizontal: wp('5%'),
     paddingTop: wp('5%'),
     paddingBottom: wp('3%'),
-    backgroundColor: '#00CCFF',
+    marginHorizontal: wp('5%'),
   },
   TitleText: {
     color: 'rgba(255,255,255,0.6)',
@@ -187,9 +205,19 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500'
   },
+  signupButton2: {
+    color: '#ffffff',
+    fontSize: 20,
+    fontWeight: '500'
+  },
   icons: {
     color: '#00CCFF',
     fontSize: 16,
+    fontWeight: '500'
+  },
+  icons2: {
+    color: '#00CCFF',
+    fontSize: 24,
     fontWeight: '500'
   },
   container2: {
@@ -254,6 +282,18 @@ const styles = StyleSheet.create({
     marginBottom: hp('3%'),
     marginRight: wp('3%'),
     marginLeft: wp('3%'),
+  },
+  profilePhoto2: {
+    height: wp('60%'),
+    width: wp('60%'),
+    // marginTop: hp('6%'),
+    // marginBottom: hp('6%'),
+    marginVertical: wp('5%'),
+    marginHorizontal: wp('5%'),
+    borderRadius: 100,
+    overflow: "hidden",
+    borderWidth: 3,
+    borderColor: '#FFFFFF'
   },
   profilePhoto: {
     height: hp('8%'),

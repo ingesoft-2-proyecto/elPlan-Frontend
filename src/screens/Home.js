@@ -102,7 +102,7 @@ export default class Home extends Component {
           <TouchableOpacity onPress={this.menu}>
             <Text style={styles.signupButton}> MENU </Text>
           </TouchableOpacity>
-          <Text style={styles.signupButton}>{this.state.name}</Text>
+          <Text style={styles.signupButton2}>{this.state.name}</Text>
           <TouchableOpacity onPress={this.profile}>
             <Image style={styles.profilePhoto} source={this.state.source} />
           </TouchableOpacity>
@@ -191,6 +191,11 @@ const styles = StyleSheet.create({
   signupButton: {
     color: '#ffffff',
     fontSize: 16,
+    fontWeight: '500'
+  },
+  signupButton2: {
+    color: '#ffffff',
+    fontSize: 20,
     fontWeight: '500'
   },
   icons: {
