@@ -147,7 +147,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'center',
     paddingVertical: 16,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   homeTextCont2: {
     justifyContent: 'space-between',

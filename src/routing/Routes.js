@@ -11,13 +11,15 @@ import Notifications from '../screens/Notifications';
 import Advanced_filter from '../screens/Advanced_filter';
 import Events from '../screens/Events';
 import ProfileUpdate from '../screens/ProfileUpdate';
+import Landing_page from '../screens/Landing_page';
 
 export default class Routes extends Component<{}> {
 	render() {
 		return(
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
-			      <Scene key="login" component={Login} title="Login" initial={true}/>
+						<Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
+						<Scene key="login" component={Login} title="login"/>
 			      <Scene key="signup" component={Signup} title="Register"/>
 						<Scene key="app_form" component={App_form} title="App_Form"/>
 						<Scene key="home" component={Home} title="Home"/>
