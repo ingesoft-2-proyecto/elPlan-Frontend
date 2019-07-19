@@ -59,7 +59,7 @@ export default class Home extends Component {
       {
         isLoading: true
       }
-    )
+    );
     try {
       let token = await getToken()
       console.log("Home | token: " + token)
