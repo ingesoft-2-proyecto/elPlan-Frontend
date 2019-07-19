@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Router, Stack, Scene} from 'react-native-router-flux';
 
+import LoggedOut from '../screens/LoggedOut';
 import Login from '../screens/Login';
 import Signup from '../screens/Signup';
 import App_form from '../screens/App_form';
@@ -18,8 +19,12 @@ export default class Routes extends Component<{}> {
 		return(
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
+<<<<<<< HEAD
 						<Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
 						<Scene key="login" component={Login} title="login"/>
+=======
+						<Scene key="login" component={Login} title="Login" initial={true}/>
+>>>>>>> b7eff0e80d9a8c4089ad1ec7ce2ab1e7cfd5b2e1
 			      <Scene key="signup" component={Signup} title="Register"/>
 						<Scene key="app_form" component={App_form} title="App_Form"/>
 						<Scene key="home" component={Home} title="Home"/>
