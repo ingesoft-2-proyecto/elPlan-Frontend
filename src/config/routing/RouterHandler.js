@@ -24,6 +24,7 @@ import Post_page from '.src/screens/Post_page';
 import Profile from '.src/screens/Profile';
 import Search from '.src/screens/Search';
 import Welcome from '.src/screens/Welcome';
+import ProfileUpdate from '.src/screens/ProfileUpdate';
 
 const ElPlan = () => {
   return (
@@ -153,6 +154,13 @@ const ElPlan = () => {
         title="Profile"
       />
       </Scene>
+
+      <Scene
+        key="ProfileUpdate"
+        component={ProfileUpdate}
+        title="ProfileUpdate"
+      />
+      </Scene >
 
       <Scene
         key="Search"
