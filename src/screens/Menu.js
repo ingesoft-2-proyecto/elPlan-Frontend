@@ -1,33 +1,76 @@
 import React, { Component } from 'react';
+import axios from "axios";
 import {
+  ActivityIndicator,
   StyleSheet,
-  Text,
+  Text, TouchableOpacity,
   View
 } from 'react-native';
+import {Actions} from "react-native-router-flux";
+import {logOut} from "../utils/logout";
+import {widthPercentageToDP as wp} from "react-native-responsive-screen";
 
-const Menu = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.welcome}>
-        Aca ira el menu 
-      </Text>
-    </View>
-  );
+
+export default class Menu extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: false,
+      name: '',
+      source: {uri: ''},
+      search: '',
+      error: '',
+      dataset: null,
+      datasetState: null,
+    };
+  }
+
+
+  logout(){
+    logOut();
+    Actions.login()
+  }
+
+  render() {
+    return (
+        <View style={styles.container}>
+            <View style={styles.homeTextCont}>
+              <TouchableOpacity onPress={this.logout}>
+                <Text style={styles.signupButton}> Logout </Text>
+              </TouchableOpacity>
+            </View>
+        </View>
+    )
+  }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#bb0000',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-    color: '#ffffff',
-  },
-});
-
-export default Menu;
+  const
+  styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#707070',
+    },
+    welcome: {
+      fontSize: 20,
+      textAlign: 'center',
+      margin: 10,
+      color: '#000000',
+    },
+    signupButton: {
+      color: '#ffffff',
+      fontSize: 16,
+      fontWeight: '500'
+    },
+    homeTextCont: {
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+      display: 'flex',
+      alignItems: 'center',
+      paddingHorizontal: wp('5%'),
+      paddingTop: wp('5%'),
+      paddingBottom: wp('3%'),
+      backgroundColor: '#00CCFF',
+    },
+  });
