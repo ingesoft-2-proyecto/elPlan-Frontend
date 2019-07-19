@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -11,6 +11,8 @@ import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
+import { getEvents, getFilter, setEventPicture } from '../utils/events';
+import { API_EVENTS } from '../config/const';
 
 export default class Home extends Component {
 
@@ -21,6 +23,9 @@ export default class Home extends Component {
       name: '',
       source: { uri: ''},
       search: '',
+      error: '',
+      dataset: null,
+      datasetState: null,
     };
 
   }
@@ -29,8 +34,8 @@ export default class Home extends Component {
     Actions.advanced_filter()
   }
 
-  notifications() {
-    Actions.notifications()
+  events() {
+    Actions.events()
   }
 
   home() {
@@ -54,7 +59,7 @@ export default class Home extends Component {
       {
         isLoading: true
       }
-    )
+    );
     try {
       let token = await getToken()
       console.log("Home | token: " + token)
@@ -97,7 +102,7 @@ export default class Home extends Component {
           <TouchableOpacity onPress={this.menu}>
             <Text style={styles.signupButton}> MENU </Text>
           </TouchableOpacity>
-          <Text style={styles.signupButton}>{this.state.name}</Text>
+          <Text style={styles.signupButton2}>{this.state.name}</Text>
           <TouchableOpacity onPress={this.profile}>
             <Image style={styles.profilePhoto} source={this.state.source} />
           </TouchableOpacity>
@@ -118,12 +123,15 @@ export default class Home extends Component {
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
         </View>
+        <View>
+          
+        </View>
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={this.notifications}>
-            <Text style={styles.icons}> NOTIFICATIONS </Text>
+          <TouchableOpacity onPress={this.events}>
+            <Text style={styles.icons}> NEW EVENT </Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> SEARCH </Text>
@@ -147,6 +155,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 16,
     flexDirection: 'row'
+  },
+  homeTextCont2: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    display: 'flex',
+    alignItems: 'center',
+    paddingHorizontal: wp('5%'),
+    paddingVertical: hp('2%'),
   },
   homeTextCont: {
     justifyContent: 'space-between',
@@ -175,6 +191,11 @@ const styles = StyleSheet.create({
   signupButton: {
     color: '#ffffff',
     fontSize: 16,
+    fontWeight: '500'
+  },
+  signupButton2: {
+    color: '#ffffff',
+    fontSize: 20,
     fontWeight: '500'
   },
   icons: {
@@ -250,10 +271,10 @@ const styles = StyleSheet.create({
     width: hp('8%'),
     // marginTop: hp('6%'),
     // marginBottom: hp('6%'),
-    borderRadius: 30,
+    borderRadius: 25,
     overflow: "hidden",
     borderWidth: 1,
-    borderColor: '#00CCFF'
+    borderColor: '#FFFFFF'
   },
   switch: {
     width: wp('60%'),
