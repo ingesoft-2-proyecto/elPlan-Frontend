@@ -7,6 +7,7 @@ import {
 
 const Calendar = () => {
   return (
+    console.log("Calendar.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca ira el calendario principal
