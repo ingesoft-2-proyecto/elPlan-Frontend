@@ -7,6 +7,7 @@ import {
 
 const Config = () => {
   return (
+    console.log("Config.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca va la configuracion

@@ -7,6 +7,7 @@ import {
 
 const Guest_page = () => {
   return (
+  console.log("Guest_page.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
        La pagina que enviara a registrarse a los invitados 

@@ -7,6 +7,7 @@ import {
 
 const Events = () => {
   return (
+    console.log("Events.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
        Aca se listaran todos los eventos
