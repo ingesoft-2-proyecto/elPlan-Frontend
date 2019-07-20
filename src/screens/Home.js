@@ -12,20 +12,10 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
-import { API_EVENTS } from '../config/const';
-import { connect } from 'react-redux';
-import { getSearchEvents } from '../redux/action/searchEventsAction';
 
 class Home extends Component {
 
-  componentDidMount(){
-    console.log("Home.js in screens, componentWillMount()");
-    this.props.getSearchEvents();
-  }
-
   constructor(props) {
-    super(props);
-    console.log("Home.js in screens, constructor");
     this.state = {
       isLoading: false,
       name: '',
@@ -39,37 +29,30 @@ class Home extends Component {
   }
 
   advanced_filter() {
-    console.log("Home.js in screens, advanced_filter()");
     Actions.advanced_filter()
   }
 
   events() {
-    console.log("Home.js in screens, events()");
     Actions.events()
   }
 
   home(){
-    console.log("Home.js in screens, home()");
     Actions.home()
   }
 
   menu() {
-    console.log("Home.js in screens, menu()");
     Actions.menu()
   }
 
   profile() {
-    console.log("Home.js in screens, profile()");
     Actions.profile()
   }
 
   async componentWillMount() {
-    console.log("Home.js in screens, componentWillMount()");
     await this.GetInfo()
   }
 
   async GetInfo() {
-    console.log("Home.js in screens, GetInfo()");
     this.setState(
       {
         isLoading: true
@@ -100,8 +83,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log("Home.js in screens, render()");
-    const { events } = this.props;
     if (this.state.isLoading) {
       return (
         <View style={styles.container}>
@@ -139,21 +120,6 @@ class Home extends Component {
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
         </View>
-        <View>
-
-        </View>
-        <FlatList
-          style={styles.containerEvents}
-          data={ events }
-          renderItem={({item}) =>
-            <TouchableOpacity onPress={() => this.onPress(item)} style={styles.item}>
-              <Image style={styles.image} source = {{uri: item.photo}} />
-              <Text style={styles.title}>{`${item.name}`}</Text>
-              <Text style={styles.title}>{`$${item.cost}`}</Text>
-            </TouchableOpacity>
-          }
-          keyExtractor={(item, index) => item.id}
-        />
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
@@ -169,16 +135,6 @@ class Home extends Component {
     )
   }
 }
-
-const mapStateToProps = state => ({
-  events: state.searchEventsReducer.events
-});
-
-const mapDispatchToProps = dispatch => ({
-  getSearchEvents: () => dispatch(getSearchEvents()),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
 
 const styles = StyleSheet.create({
   container: {
