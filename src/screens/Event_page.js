@@ -7,6 +7,7 @@ import {
 
 const Event_page = () => {
   return (
+    console.log("Event_page.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca va la descripcion del evento

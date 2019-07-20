@@ -10,6 +10,7 @@ import { Actions } from 'react-native-router-flux';
 
 const App_form = () => {
   return (
+    console.log("App_form.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Formulario de los  que se registran directamente en la pagina

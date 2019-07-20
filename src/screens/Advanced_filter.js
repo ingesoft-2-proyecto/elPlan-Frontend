@@ -7,6 +7,7 @@ import {
 
 const Advanced_filter = () => {
   return (
+    console.log("Advanced_filter.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aqui iran los filtros avanzados

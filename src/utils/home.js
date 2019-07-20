@@ -10,7 +10,10 @@ const AGE = 'age';
 const EMAIL = 'email';
 const URL = 'fileURL';
 
+console.log("home.js in utils, general class");
+
 const storeUserPicture = async(url) => {
+  console.log("home.js in utils, storeUserPicture");
     try {
         AsyncStorage.setItem(URL, url);
     } catch (error) {
@@ -19,6 +22,7 @@ const storeUserPicture = async(url) => {
 }
 
 export const setUserPicture = async (user_id) => {
+  console.log("home.js in utils, setUserPicture");
     try {
         const API_PICTURE = `${API_USERS_PICTURE}/${user_id}`;
         let response = await fetch(API_PICTURE, {
@@ -39,6 +43,7 @@ export const setUserPicture = async (user_id) => {
 }
 
 export const getUrl = async () => {
+  console.log("home.js in utils, getUrl");
     try {
         let url = await AsyncStorage.getItem(URL);
         console.log("Recibiendo url: " + url)
@@ -49,6 +54,7 @@ export const getUrl = async () => {
 }
 
 const storeUserData = async(id, name, lastname, age, email) => {
+  console.log("home.js in utils, storeUserData");
     try {
         AsyncStorage.setItem(ID, id.toString());
         AsyncStorage.setItem(NAME, name);
@@ -62,6 +68,7 @@ const storeUserData = async(id, name, lastname, age, email) => {
 }
 
 export const setUserData = async (token) => {
+  console.log("home.js in utils, setUserData");
     try {
         let idtoken = await getIDToken()
         const API_ACTUAL_USER = `${API_USERS}/${idtoken}`;
@@ -86,6 +93,7 @@ export const setUserData = async (token) => {
 }
 
 export const getID = async () => {
+  console.log("home.js in utils, getID");
     try {
         let id = await AsyncStorage.getItem(ID);
         console.log("Recibiendo ID: " + id)
@@ -96,6 +104,7 @@ export const getID = async () => {
 }
 
 export const getName = async () => {
+  console.log("home.js in utils, getName");
     try {
         let name = await AsyncStorage.getItem(NAME);
         console.log("Recibiendo Name: " + name)
@@ -106,6 +115,7 @@ export const getName = async () => {
 }
 
 export const getLastname = async () => {
+  console.log("home.js in utils, getLastname");
     try {
         let lastname = await AsyncStorage.getItem(LASTNAME);
         console.log("Recibiendo Lastname: " + lastname)
@@ -116,6 +126,7 @@ export const getLastname = async () => {
 }
 
 export const getAge = async () => {
+  console.log("home.js in utils, getAge");
     try {
         let age = await AsyncStorage.getItem(AGE);
         console.log("Recibiendo Age: " + age)
@@ -126,6 +137,7 @@ export const getAge = async () => {
 }
 
 export const getEmail = async () => {
+  console.log("home.js in utils, getEmail");
     try {
         let email = await AsyncStorage.getItem(EMAIL);
         console.log("Recibiendo Email: " + email)

@@ -7,6 +7,7 @@ import {
 
 const Welcome = () => {
   return (
+    console.log("Welcome.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         La pagina de bienvenida 
