@@ -4,6 +4,20 @@ import {
   View,
   StatusBar
 } from 'react-native';
+import firebase from 'firebase';
+
+
+const firebaseConfig ={
+  apiKey: "AIzaSyAc5qE3pLTgRY_5aUNL9NV5MXoZCpkZN_o",
+  authDomain: "el-plan.firebaseapp.com",
+  databaseURL: "https://el-plan.firebaseio.com",
+  projectId: "el-plan",
+  messagingSenderId: "1066517312122",
+};
+
+firebase.initializeApp(firebaseConfig);
+
+
 
 
 import Routes from './src/routing/Routes';
