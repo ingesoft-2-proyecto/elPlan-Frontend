@@ -1,4 +1,4 @@
-export const API = 'https://elplanbackend1.herokuapp.com';
+export const API = 'https://elplanbackend.herokuapp.com';
 export const API_LOG_IN = `${API}/auth/login`;
 export const API_SIGN_UP = `${API}/users`;
 export const API_USERS = `${API}/users`;
