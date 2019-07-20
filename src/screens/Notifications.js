@@ -19,7 +19,6 @@ export default class Notifications extends Component {
     this.state = {
       notifications: 'T',
       isLoading: false, //ya
-      errors: [],
     };
 
   }
@@ -32,41 +31,29 @@ export default class Notifications extends Component {
     Actions.pop();
   }
 
+  profile() {
+    Actions.profile()
+  }
+
+
   async Edit() {
 
-    try {
+    const { notifications } = this.state;
+    if (notifications == true) {
 
-      const { notifications } = this.state;
-      if (notifications == true) {
+      this.setState({ notifications: true })
 
-        this.setState({ notifications: true })
+    } else if (notifications == false) {
 
-      } else if (notifications == false) {
-
-        this.setState({ notifications: false })
-      }
-
-      let response = await editNotifications(
-        this.state.notifications
-      )
-
-      let status = response.status;
-      console.log("res status: " + status);
-
-      if (status >= 200 && status < 300) {
-        this.setState({ errors: [] })
-        console.log("Notificaciones actualizadas");
-        this.goBack()
-
-      } else {
-        console.log("Notificaciones actualizadas | Error");
-        this.setState({ isLoading: false })
-      }
-
-    } catch (error) {
-      this.setState({ isLoading: false })
-      console.log("catch errors: " + error)
+      this.setState({ notifications: false })
     }
+
+    editNotifications(
+      this.state.notifications
+    )
+    console.log("Notificaciones actualizadas");
+    this.setState({ isLoading: false })
+    this.profile();
   };
 
   render() {
@@ -83,13 +70,13 @@ export default class Notifications extends Component {
     }
     return (
       <View style={styles.container}>
+        <View style={styles.notificationsTextCont}>
+          <TouchableOpacity
+            onPress={() => this.goBack()}>
+            <Text style={styles.signupButton2}>BACK</Text>
+          </TouchableOpacity>
+        </View>
         <View style={styles.container2}>
-          <View style={styles.notificationsTextCont}>
-            <TouchableOpacity style={styles.button}
-              onPress={() => this.goBack()}>
-              <Text style={styles.signupButton2}>BACK</Text>
-            </TouchableOpacity>
-          </View>
           <Text style={styles.text}>¿Do you want to change notifications?</Text>
           <View style={styles.switch}>
             <SwitchSelector
@@ -136,7 +123,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
     justifyContent: 'center',
     paddingVertical: 16,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
   notificationsTextCont: {
     justifyContent: 'flex-start',

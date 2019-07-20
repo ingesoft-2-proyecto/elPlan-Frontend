@@ -19,23 +19,57 @@ import SocialMediaButton from '../components/buttons/SocialMediaButton';
 export default class LoggedOut extends Component {
   async onFacebookPress(){
     const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync(
-    "2860165380720120",
+    "FB_APP_ID",
     {
       permissions: ["public_profile"]
     }
   );
-  if (type === "success") {
-    const response = await fetch(
-      `https://graph.facebook.com/me?access_token=${token}&fields=id,name,birthday,picture.type(large)`
-    );
-    const { picture, name, birthday } = await response.json();
-    Alert.alert(
-      'Logged in!'
-      
-    )
-  } else {
+  //if (type === "success") {
+    //const response = await fetch(
+      //`https://graph.facebook.com/me?access_token=${token}&fields=id,name,birthday,picture.type(large)`
+    //);
+  //  const { picture, name, birthday } = await response.json();
+    //Alert.alert(
+      //'Logged in!'
+
+    //)
+  //} else {
     // Handle errors here.
-  }
+  //
+  //}}
+  //}}
+  firebase.auth().signInWithCredential(tokens).then(function(result) {
+   const loginParams = {"name": result.additionalUserInfo.profile.name,"email": result.additionalUserInfo.profile.email,
+       "avatar": result.additionalUserInfo.profile.picture.data.url }
+
+s
+
+      if(this.state.error === null){
+     // setTimeout(function(){document.location.reload()},1000);
+      }
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    //var token = result.credential.accessToken;
+    // The signed-in user info.
+    //var user = result.user;
+  }).catch(function(error) {
+    // Handle Errors here.
+    //var errorCode = error.code;
+    //var errorMessage = error.message;
+    // The email of the user's account used.
+   // var email = error.email;
+    // The firebase.auth.AuthCredential type that was used.
+    //var credential = error.credential;
+    // ...
+  });
+   };
+
+  signOut = (response) => {
+      firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    console.log("deslogeado")
+  }).catch(function(error) {
+    // An error happened.
+  });
   }
 
   onGooglePress(){
