@@ -12,10 +12,20 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
+import { API_EVENTS } from '../config/const';
+import { connect } from 'react-redux';
+import { getSearchEvents } from '../redux/action/searchEventsAction';
 
 class Home extends Component {
 
+  componentDidMount(){
+    console.log("Home.js in screens, componentWillMount()");
+    this.props.getSearchEvents();
+  }
+
   constructor(props) {
+    super(props);
+    console.log("Home.js in screens, constructor");
     this.state = {
       isLoading: false,
       name: '',
@@ -28,31 +38,51 @@ class Home extends Component {
 
   }
 
+  searchName(search){
+    window.events = "search_filter";
+    window.eventsName = search;
+    Actions.home()
+  }
+
+  searchEventId(id){
+    window.events = "events/";
+    window.eventsId = id;
+    Actions.event_page()
+  }
+
   advanced_filter() {
+    console.log("Home.js in screens, advanced_filter()");
     Actions.advanced_filter()
   }
 
   events() {
+    console.log("Home.js in screens, events()");
     Actions.events()
   }
 
   home(){
+    window.events = "events";
+    console.log("Home.js in screens, home()");
     Actions.home()
   }
 
   menu() {
+    console.log("Home.js in screens, menu()");
     Actions.menu()
   }
 
   profile() {
+    console.log("Home.js in screens, profile()");
     Actions.profile()
   }
 
   async componentWillMount() {
+    console.log("Home.js in screens, componentWillMount()");
     await this.GetInfo()
   }
 
   async GetInfo() {
+    console.log("Home.js in screens, GetInfo()");
     this.setState(
       {
         isLoading: true
@@ -83,6 +113,8 @@ class Home extends Component {
   }
 
   render() {
+    console.log("Home.js in screens, render()");
+    const { events } = this.props;
     if (this.state.isLoading) {
       return (
         <View style={styles.container}>
@@ -116,25 +148,50 @@ class Home extends Component {
             value={this.state.search}
           />
           <TouchableOpacity style={styles.buttonFilters}
-            onPress={() => this.advanced_filter()}>
-            <Text style={styles.buttonText}>Advanced Filters</Text>
+            onPress={() => this.searchName(this.state.search)}>
+            <Text style={styles.buttonText}>Search by name</Text>
           </TouchableOpacity>
         </View>
+        <View>
+
+        </View>
+        <FlatList
+          style={styles.containerEvents}
+          data={ events }
+          renderItem={({item}) =>
+            <TouchableOpacity onPress={() => this.searchEventId(item.id)} style={styles.item}>
+              <Image style={styles.image} source = {{uri: item.photo}} />
+              <Text style={styles.title}>{`${item.name}`}</Text>
+              <Text style={styles.title}>{`$${item.cost}`}</Text>
+            </TouchableOpacity>
+          }
+          keyExtractor={(item, index) => item.id}
+        />
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
           </TouchableOpacity>
+          <TouchableOpacity onPress={this.advanced_filter}>
+            <Text style={styles.icons}> ADVANCED FILTERS </Text>
+          </TouchableOpacity>
           <TouchableOpacity onPress={this.events}>
             <Text style={styles.icons}> NEW EVENT </Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={this.home}>
-            <Text style={styles.icons}> SEARCH </Text>
           </TouchableOpacity>
         </View>
       </View>
     )
   }
 }
+
+const mapStateToProps = state => ({
+  events: state.searchEventsReducer.events
+});
+
+const mapDispatchToProps = dispatch => ({
+  getSearchEvents: () => dispatch(getSearchEvents()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
 
 const styles = StyleSheet.create({
   container: {

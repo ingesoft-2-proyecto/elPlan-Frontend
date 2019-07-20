@@ -14,8 +14,8 @@ export default class Login extends Component {
     super(props);
     console.log("Login.js in screens constructor");
     this.state = {
-      email: 'lahiguarans@unal.edu.co',
-      password: '123456',
+      email: 'carlosnieto@gmail.com',
+      password: 'password',
       isLoading: false,
       error: '',
     };
