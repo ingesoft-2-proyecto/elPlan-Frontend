@@ -16,6 +16,7 @@ import Landing_page from '../screens/Landing_page';
 
 export default class Routes extends Component<{}> {
 	render() {
+		
 		return(
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
