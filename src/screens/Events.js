@@ -17,11 +17,11 @@ export default class Events extends Component {
     super(props);
     this.state = {
       name: '', //ya
-      age: 0, //ya
+      cost: 0, //ya
       date: '', //ya
-      lastname: '', //ya 
-      password: '', //ya
-      notifications: 'T',
+      description: '', //ya 
+      borough: '', //ya
+      cate: 'T',
       confirmpassword: '', //ya
       email: '', //ya
       isLoading: false, //ya

@@ -16,15 +16,12 @@ import Landing_page from '../screens/Landing_page';
 
 export default class Routes extends Component<{}> {
 	render() {
+		
 		return(
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
-<<<<<<< HEAD
 						<Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
-						<Scene key="login" component={Login} title="login"/>
-=======
-						<Scene key="login" component={Login} title="Login" initial={true}/>
->>>>>>> b7eff0e80d9a8c4089ad1ec7ce2ab1e7cfd5b2e1
+						<Scene key="login" component={Login} title="login" initial={true} />
 			      <Scene key="signup" component={Signup} title="Register"/>
 						<Scene key="app_form" component={App_form} title="App_Form"/>
 						<Scene key="home" component={Home} title="Home"/>
