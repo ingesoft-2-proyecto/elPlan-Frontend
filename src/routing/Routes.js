@@ -1,11 +1,5 @@
-console.log("Routes.js in routing initial");
-
 import React, { Component } from 'react';
 import {Router, Stack, Scene} from 'react-native-router-flux';
-import { Provider } from 'react-redux';
-
-import configureStore from '../redux/configureStore';
-import LoggedOut from '../screens/LoggedOut';
 
 import Login from '../screens/Login';
 import Signup from '../screens/Signup';
@@ -21,18 +15,7 @@ import Landing_page from '../screens/Landing_page';
 
 export default class Routes extends Component<{}> {
 
-	constructor() {
-    super();
-		console.log("********************** Routes.js in routing constructor() ++++++++++++++++++++++");
-		window.events = "events";
-		this.state = {
-      isLoading: true,
-      store: configureStore(() => this.setState({ isLoading: false })),
-    };
-  }
-
-	render() {
-		
+	render() {		
 		return(
 
 			<Router>
