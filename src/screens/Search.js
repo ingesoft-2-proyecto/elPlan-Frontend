@@ -7,6 +7,7 @@ import {
 
 const Search = () => {
   return (
+    console.log("Search.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         las busquedas 

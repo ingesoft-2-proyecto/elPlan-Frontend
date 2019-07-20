@@ -1,3 +1,4 @@
+console.log("Component Form.js initial");
 import React, { Component } from 'react';
 import {
   StyleSheet,

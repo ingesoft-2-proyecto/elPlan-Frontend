@@ -28,6 +28,7 @@ import ProfileUpdate from '.src/screens/ProfileUpdate';
 
 const ElPlan = () => {
   return (
+    console.log("RouterHandler.js in Config"),
     <Router>
       <Scene key="root">
         <Scene key="LandingPage"

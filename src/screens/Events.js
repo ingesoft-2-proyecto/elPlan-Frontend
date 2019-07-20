@@ -361,6 +361,7 @@ export default class Events extends Component {
       )
     }
   }
+
 }
 
 const styles = StyleSheet.create({

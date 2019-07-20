@@ -7,6 +7,7 @@ import {
 
 const Post_page = () => {
   return (
+    console.log("Post_page.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca iran los comentarios

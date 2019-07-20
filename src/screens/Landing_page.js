@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
+
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
-import Expo from "expo";
+//import Expo from "expo";
 import { validateLogin } from "../utils/validation";
 import { Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
+import firebase from 'firebase'
+const FB_APP_ID = '2860165380720120';
+
+
+
+
 
 export default class Landing_page extends Component {
 
@@ -26,9 +33,35 @@ export default class Landing_page extends Component {
     Actions.login()
   }
 
-  landingpage() {
-    Actions.landingpage()
+
+  componentDidMount() {
+
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user != null) {
+          console.log(user)
+        }
+      })
+    }
+
+
+  async landingpage() {
+  //  Actions.landingpage()
+  const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('FB_APP_ID', { permissions: ['public_profile'] })
+
+ if (type == 'success') {
+
+   const credential = firebase.auth.FacebookAuthProvider.credential(token)
+
+   firebase.auth().signInWithCredential(credential).catch((error) => {
+     console.log(error)
+   })
+ }
+
   }
+
+
+
+
 
   render() {
     if (this.state.isLoading) {

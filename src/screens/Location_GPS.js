@@ -7,6 +7,7 @@ import {
 
 const Location_GPS = () => {
   return (
+    console.log("Location_GPS.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca ira la imagen de activarel GPS
