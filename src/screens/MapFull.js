@@ -7,6 +7,7 @@ import {
 
 const MapFull = () => {
   return (
+    console.log("MapFull.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Aca ira el mapa llenando toda la pantalla 

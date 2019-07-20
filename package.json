@@ -7,6 +7,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.5.1",
     "axios": "^0.19.0",
     "expo": "^32.0.0",
     "expo-facebook": "^5.0.1",
@@ -21,7 +22,11 @@
     "react-native-router-flux": "^4.0.6",
     "react-native-switch-selector": "^1.1.14",
     "react-navigation": "^3.10.2",
-    "react-router": "^5.0.0"
+    "react-redux": "5.0.4",
+    "react-router": "^5.0.0",
+    "redux": "3.6.0",
+    "redux-persist": "4.8.0",
+    "redux-thunk": "2.2.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"

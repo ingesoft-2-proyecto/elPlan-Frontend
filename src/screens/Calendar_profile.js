@@ -7,6 +7,7 @@ import {
 
 const Calendar_profile = () => {
   return (
+    console.log("Calendar_profile.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         El calendario que ira en el perfil 

@@ -7,6 +7,7 @@ import {
 
 const Landing_page = () => {
   return (
+    console.log("Landing_page.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Scarlet Screen
