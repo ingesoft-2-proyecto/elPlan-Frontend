@@ -11,7 +11,8 @@ import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../
 export default class Login extends Component {
 
   constructor(props) {
-    super(props); 
+    super(props);
+    console.log("Login.js in screens constructor");
     this.state = {
       email: 'lahiguarans@unal.edu.co',
       password: '123456',
@@ -21,14 +22,17 @@ export default class Login extends Component {
   }
 
 	signup() {
+    console.log("Login.js in screens, signup()");
 		Actions.signup()
   }
 
   home() {
+    console.log("Login.js in screens, home()");
     Actions.home()
   }
-  
+
   goForm() {
+    console.log("Login.js in screens, goForm()");
     if (validateLogin(this.state.password, this.state.email)) {
 
       this.sendData()
@@ -36,7 +40,7 @@ export default class Login extends Component {
   }
 
   async sendData() {
-
+    console.log("Login.js in screens, sendData()");
     try {
 
       this.setState(
@@ -51,8 +55,8 @@ export default class Login extends Component {
       if (response.status >= 200 && response.status < 300) {
         let res = await response.json();
         this.setState(
-          { 
-            error: "" 
+          {
+            error: ""
           }
         )
         let accessToken = res.token
@@ -80,6 +84,7 @@ export default class Login extends Component {
 	render() {
     if (this.state.isLoading) {
       return (
+        console.log("Login.js in screens"),
         <View style={styles.container}>
           <View style={styles.container2}>
             <Text style={styles.headling}>LOGUEANDO...</Text>

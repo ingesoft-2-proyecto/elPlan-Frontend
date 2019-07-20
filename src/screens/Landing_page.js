@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
@@ -57,6 +58,7 @@ export default class Landing_page extends Component {
  }
 
   }
+
 
 
 

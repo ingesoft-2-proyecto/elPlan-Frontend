@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, Dimensions, FlatList } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -13,11 +13,19 @@ import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/logi
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
 import { API_EVENTS } from '../config/const';
+import { connect } from 'react-redux';
+import { getSearchEvents } from '../redux/action/searchEventsAction';
 
-export default class Home extends Component {
+class Home extends Component {
+
+  componentDidMount(){
+    console.log("Home.js in screens, componentWillMount()");
+    this.props.getSearchEvents();
+  }
 
   constructor(props) {
     super(props);
+    console.log("Home.js in screens, constructor");
     this.state = {
       isLoading: false,
       name: '',
@@ -31,30 +39,37 @@ export default class Home extends Component {
   }
 
   advanced_filter() {
+    console.log("Home.js in screens, advanced_filter()");
     Actions.advanced_filter()
   }
 
   events() {
+    console.log("Home.js in screens, events()");
     Actions.events()
   }
 
-  home() {
+  home(){
+    console.log("Home.js in screens, home()");
     Actions.home()
   }
 
   menu() {
+    console.log("Home.js in screens, menu()");
     Actions.menu()
   }
 
   profile() {
+    console.log("Home.js in screens, profile()");
     Actions.profile()
   }
 
   async componentWillMount() {
+    console.log("Home.js in screens, componentWillMount()");
     await this.GetInfo()
   }
 
   async GetInfo() {
+    console.log("Home.js in screens, GetInfo()");
     this.setState(
       {
         isLoading: true
@@ -82,10 +97,11 @@ export default class Home extends Component {
         isLoading: false
       }
     )
-  } 
+  }
 
   render() {
-
+    console.log("Home.js in screens, render()");
+    const { events } = this.props;
     if (this.state.isLoading) {
       return (
         <View style={styles.container}>
@@ -124,8 +140,20 @@ export default class Home extends Component {
           </TouchableOpacity>
         </View>
         <View>
-          
+
         </View>
+        <FlatList
+          style={styles.containerEvents}
+          data={ events }
+          renderItem={({item}) =>
+            <TouchableOpacity onPress={() => this.onPress(item)} style={styles.item}>
+              <Image style={styles.image} source = {{uri: item.photo}} />
+              <Text style={styles.title}>{`${item.name}`}</Text>
+              <Text style={styles.title}>{`$${item.cost}`}</Text>
+            </TouchableOpacity>
+          }
+          keyExtractor={(item, index) => item.id}
+        />
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
@@ -141,6 +169,16 @@ export default class Home extends Component {
     )
   }
 }
+
+const mapStateToProps = state => ({
+  events: state.searchEventsReducer.events
+});
+
+const mapDispatchToProps = dispatch => ({
+  getSearchEvents: () => dispatch(getSearchEvents()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
 
 const styles = StyleSheet.create({
   container: {
@@ -286,5 +324,25 @@ const styles = StyleSheet.create({
   },
   datepicker: {
     marginTop: 8,
+  },
+  item: {
+    backgroundColor: 'white',
+    padding: 20,
+    marginBottom: 20,
+  },
+  image: {
+    width: Dimensions.get('window').width-80,
+    height: Dimensions.get('window').width *4/7,
+    marginBottom: 15,
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginBottom: 5,
+    color: '#555',
+  },
+  containerEvents: {
+    padding: 20,
+    backgroundColor: 'white',
   },
 });

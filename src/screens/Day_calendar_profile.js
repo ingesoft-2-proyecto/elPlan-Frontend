@@ -7,6 +7,7 @@ import {
 
 const Day_calendar_profile = () => {
   return (
+    console.log("Day_calendar_profile.js in screens"),
     <View style={styles.container}>
       <Text style={styles.welcome}>
         Scarlet Screen

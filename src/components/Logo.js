@@ -9,6 +9,7 @@ import {
 export default class Logo extends Component<{}> {
 	render(){
 		return(
+      console.log("Component Logo.js"),
 			<View style={styles.container}>
 				<Image  style={{width:40, height: 70}}
           			source={require('../assets/logo.png')}/>
