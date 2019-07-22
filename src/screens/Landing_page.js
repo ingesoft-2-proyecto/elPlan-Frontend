@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
+//import Expo from "expo";
 import { validateLogin } from "../utils/validation";
 import { Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
 import * as firebase from 'firebase';
-
-
-
-
 
 export default class Landing_page extends Component {
 
@@ -30,7 +27,6 @@ export default class Landing_page extends Component {
     Actions.login()
   }
 
-
   async landingpage() {
   //Actions.landingpage()
     const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('2860165380720120', { permissions: ['public_profile'] })
@@ -45,7 +41,6 @@ export default class Landing_page extends Component {
 
       })
     }
-
   }
 
   render() {
