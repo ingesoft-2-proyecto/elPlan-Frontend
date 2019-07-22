@@ -3,7 +3,10 @@ import { AsyncStorage } from 'react-native';
 import { API_SIGN_UP } from '../config/const';
 import { getToken } from './login';
 
+console.log("signup.js in utils");
+
 export const sendDataToSignUp = async (name, lastname, password, confirmpassword, email, age, date, notifications) => {
+    console.log("signup.js in utils, sendDataToSignUp");
     return fetch(API_SIGN_UP, {
         method: 'POST',
         headers: {
@@ -28,6 +31,7 @@ export const sendDataToSignUp = async (name, lastname, password, confirmpassword
 }
 
 export const sendPictureToSignUp = async (formdata, user_id) => {
+  console.log("signup.js in utils, sendPictureToSignUp");
     const API_SIGN_UP_USER = `${API_SIGN_UP}/${user_id}`;
     return fetch(API_SIGN_UP_USER, {
         method: 'PUT',

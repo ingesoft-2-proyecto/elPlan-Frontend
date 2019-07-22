@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Router, Stack, Scene} from 'react-native-router-flux';
 
-import LoggedOut from '../screens/LoggedOut';
 import Login from '../screens/Login';
 import Signup from '../screens/Signup';
 import App_form from '../screens/App_form';
@@ -15,8 +14,10 @@ import ProfileUpdate from '../screens/ProfileUpdate';
 import Landing_page from '../screens/Landing_page';
 
 export default class Routes extends Component<{}> {
-	render() {
+
+	render() {		
 		return(
+
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
 
@@ -33,6 +34,7 @@ export default class Routes extends Component<{}> {
 						<Scene key="profileupdate" component={ProfileUpdate} title="profileupdate" />
 					</Stack>
 			 </Router>
+
 			)
 	}
 }

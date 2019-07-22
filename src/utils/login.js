@@ -5,7 +5,10 @@ import { API_LOG_IN } from '../config/const';
 const ACCESS_TOKEN = 'access_token';
 const ID = 'id';
 
+console.log("login.js in utils");
+
 export const storeID = async (id) => {
+  console.log("login.js in utils, storeID");
     try {
         await AsyncStorage.setItem(ID, id.toString());
     } catch (error) {
@@ -14,6 +17,7 @@ export const storeID = async (id) => {
 }
 
 export const getIDToken = async () => {
+  console.log("login.js in utils, getIDToken");
     try {
         let id = await AsyncStorage.getItem(ID);
         console.log("getId | Id is: " + id)
@@ -24,6 +28,7 @@ export const getIDToken = async () => {
 }
 
 export const storeToken = async (accessToken) => {
+  console.log("login.js in utils, storeToken");
     try {
         await AsyncStorage.setItem(ACCESS_TOKEN, accessToken);
         getToken();
@@ -33,6 +38,7 @@ export const storeToken = async (accessToken) => {
 }
 
 export const getToken = async () => {
+  console.log("login.js in utils, getToken");
     try {
         let token = await AsyncStorage.getItem(ACCESS_TOKEN);
         console.log("getToken | token is: " + token)
@@ -43,6 +49,7 @@ export const getToken = async () => {
 }
 
 export const removeToken = async () => {
+  console.log("login.js in utils, removeToken");
     try {
         await AsyncStorage.removeItem(ACCESS_TOKEN);
         getToken();
@@ -52,6 +59,7 @@ export const removeToken = async () => {
 }
 
 export const sendDataToLogIn = async (email, password) => {
+  console.log("login.js in utils, sendDataToLogIn");
     return fetch(API_LOG_IN, {
         method: 'POST',
         headers: {

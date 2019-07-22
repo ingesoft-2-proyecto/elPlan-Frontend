@@ -10,6 +10,7 @@ import SwitchSelector from "react-native-switch-selector";
 import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
+import { sendDataToEvents } from '../utils/events';
 
 export default class Events extends Component {
 
@@ -17,15 +18,16 @@ export default class Events extends Component {
     super(props);
     this.state = {
       name: '', //ya
-      age: 0, //ya
-      date: '', //ya
-      lastname: '', //ya 
-      password: '', //ya
-      notifications: 'T',
-      confirmpassword: '', //ya
-      email: '', //ya
-      isLoading: false, //ya
-      isSignup: false, //ya
+      borough: '', //ya
+      address: '', //ya
+      description: '', //ya
+      category: '', //ya
+      type_of_public: '', //ya
+      cost: '0', //ya
+      date: '',
+      hour: '', //ya
+      isLoading: false,
+      isSignup: false,
       imageUri: null,
       imageType: null,
       imageName: null,
@@ -44,13 +46,11 @@ export default class Events extends Component {
   }
 
   goForm() {
-    if (validateSignup(this.state.password, this.state.confirmpassword, this.state.email)) {
-      this.setState(
-        {
-          isSignup: true
-        }
-      )
-    }
+    this.setState(
+      {
+        isSignup: true
+      }
+    )
   }
 
   pickImage = async () => {
@@ -97,16 +97,13 @@ export default class Events extends Component {
     if ("default" in moment) {
       moment = moment["default"];
     }
-    const now = moment();
-
     const { date } = this.state;
-    const birthdate = moment(date, "DD-MM-YYYY");
-
-    const years = now.diff(birthdate, 'years', false);
+    const eventdate = moment(date, "YYYY-MM-DD HH:mm:ss");
+    const eventdate2 = eventdate.format("YYYY-MM-DD HH:mm:ss UTC");
 
     await this.setState(
       {
-        age: years
+        hour: eventdate2
       }
     );
 
@@ -126,101 +123,72 @@ export default class Events extends Component {
         }
       )
 
-      const { notifications } = this.state;
-      if (notifications == true) {
+      const { cost } = this.state;
+      let numeric_cost = Number(cost);
+      await this.setState({ cost: numeric_cost });
 
-        this.setState({ notifications: true })
-
-      } else if (notifications == false) {
-
-        this.setState({ notifications: false })
-      }
-
-      let response = await sendDataToSignUp(
+      let response = await sendDataToEvents(
         this.state.name,
-        this.state.lastname,
-        this.state.password,
-        this.state.confirmpassword,
-        this.state.email,
-        this.state.age,
-        this.state.date,
-        this.state.notifications
+        this.state.description,
+        this.state.cost,
+        this.state.borough,
+        this.state.address,
+        this.state.type_of_public,
+        this.state.category,
+        this.state.hour,
       )
 
       let status = response.status;
       console.log("res status: " + status);
+      let res = await response.json();
+      let event_id = res.id
 
-      switch (status) {
-        case 201:
+      if (status >= 200 && status < 300) {
+        this.setState({ errors: [] })
+        Alert.alert("Nuevo evento creado :) GRACIAS")
+  
+        try {
 
-          this.setState({ errors: [] })
-          console.log("Nuevo usuario creado");
+          let responsepicture = await sendPictureToEvents(formdata, event_id)
+          let statuspicture = responsepicture.status;
+          console.log("res picture status: " + statuspicture);
 
-          let resToken = await sendDataToLogIn(this.state.email, this.state.password)
-          let reslogin = await resToken.json();
-          let accessToken = reslogin.token
-          storeToken(accessToken);
-          storeID(reslogin.user_id);
+          if (statuspicture >= 200 && statuspicture < 300) {
 
-          console.log("Access Token's Expiration: " + reslogin.exp)
-          console.log("Access Token's User ID: " + reslogin.user_id)
-
-          try {
-
-            let responsepicture = await sendPictureToSignUp(formdata, reslogin.user_id)
-            let statuspicture = responsepicture.status;
-            console.log("res picture status: " + statuspicture);
-
-            if (statuspicture >= 200 && statuspicture < 300) {
-
-              this.setState({ errors2: [] })
-              console.log("Foto de perfil subida");
-              this.setState({ isLoading: false })
-              this.home()
-
-            } else {
-
-              let respicture = await responsepicture.json();
-              this.setState({ errors2: [] })
-              var propertiespicture = ["photo"];
-              for (var i = 0; i < propertiespicture.length; i++) {
-                if (respicture[propertiespicture[i]] != undefined) {
-                  console.log(respicture[propertiespicture[i]].toString())
-                  this.state.errors.push(respicture[propertiespicture[i]].toString())
-                }
-              }
-
-              console.log(this.state.errors2.join(". \n").concat('.'));
-              this.setState({ isLoading: false })
-
-            }
-
-          } catch (error) {
-
+            this.setState({ errors2: [] })
+            console.log("Foto de evento subida");
             this.setState({ isLoading: false })
-            console.log("catch errors: " + error)
-          }
+            this.home()
 
-        case 422:
+          } else {
 
-          let res = await response.json();
-          this.setState({ errors: [] })
-          var properties = ["name", "surname", "email", "password", "age", "password_confirmation"];
-          for (var i = 0; i < properties.length; i++) {
-            if (res[properties[i]] != undefined) {
-              console.log(res[properties[i]].toString())
-              this.state.errors.push(res[properties[i]].toString())
+            let respicture = await responsepicture.json();
+            this.setState({ errors2: [] })
+            var propertiespicture = ["photo"];
+            for (var i = 0; i < propertiespicture.length; i++) {
+              if (respicture[propertiespicture[i]] != undefined) {
+                console.log(respicture[propertiespicture[i]].toString())
+                this.state.errors.push(respicture[propertiespicture[i]].toString())
+              }
             }
+
+            console.log(this.state.errors2.join(". \n").concat('.'));
+            this.setState({ isLoading: false })
+
           }
 
-          console.log(this.state.errors.join(". \n").concat('.'));
+        } catch (error) {
+
           this.setState({ isLoading: false })
-          break;
+          console.log("catch errors: " + error)
+        }
 
-        default:
-          break;
+      } else {
+
+        console.log("Error creando evento")
+        this.setState({ isLoading: false })
+
       }
-
     } catch (error) {
       this.setState({ isLoading: false })
       console.log("catch errors: " + error)
@@ -233,7 +201,7 @@ export default class Events extends Component {
       return (
         <View style={styles.container}>
           <View style={styles.container2}>
-            <Text style={styles.headling}>REGISTRANDO...</Text>
+            <Text style={styles.headling}>CREANDO EVENTO...</Text>
             <ActivityIndicator size="large" color="#00CCFF" />
           </View>
         </View>
@@ -242,48 +210,12 @@ export default class Events extends Component {
     if (this.state.isSignup == false) {
       return (
         <View style={styles.container}>
-          <Logo />
-          <View style={styles.container2}>
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Email Address"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="email-address"
-              onChangeText={(email) => this.setState({ email })}
-              value={this.state.email}
-            />
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Password"
-              secureTextEntry={true}
-              placeholderTextColor="#ffffff"
-              onChangeText={(password) => this.setState({ password })}
-              value={this.state.password}
-            />
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Confirm Password"
-              secureTextEntry={true}
-              placeholderTextColor="#ffffff"
-              onChangeText={(confirmpassword) => this.setState({ confirmpassword })}
-              value={this.state.confirmpassword}
-            />
-            <TouchableOpacity style={styles.button}
-              onPress={() => this.goForm()}>
-              <Text style={styles.buttonText}>Sign Up</Text>
+          <View style={styles.notificationsTextCont}>
+            <TouchableOpacity
+              onPress={() => this.goBack()}>
+              <Text style={styles.signupButton2}>BACK</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.signupTextCont}>
-            <Text style={styles.signupText}>¿Posees una cuenta?</Text>
-            <TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> LOGIN </Text></TouchableOpacity>
-          </View>
-        </View>
-      )
-    } else {
-      return (
-        <View style={styles.container}>
           <View style={styles.container2}>
             <TextInput style={styles.inputBox}
               underlineColorAndroid='rgba(0,0,0,0)'
@@ -291,27 +223,112 @@ export default class Events extends Component {
               maxLength={100}
               placeholderTextColor="#ffffff"
               selectionColor="#fff"
+              keyboardType="default"
               onChangeText={(name) => this.setState({ name })}
               value={this.state.name}
             />
             <TextInput style={styles.inputBox}
               underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Last Name"
+              placeholder="Description"
               maxLength={100}
               placeholderTextColor="#ffffff"
               selectionColor="#fff"
-              onChangeText={(lastname) => this.setState({ lastname })}
-              value={this.state.lastname}
+              keyboardType="default"
+              multiline = { true }
+              numberOfLines = { 4 }
+              onChangeText={(description) => this.setState({ description })}
+              value={this.state.description}
             />
+            <TextInput style={styles.inputBox}
+              underlineColorAndroid='rgba(0,0,0,0)'
+              placeholder="Cost"
+              maxLength={100}
+              placeholderTextColor="#ffffff"
+              selectionColor="#fff"
+              keyboardType="number-pad"
+              onChangeText={(cost) => this.setState({ cost })}
+              value={this.state.cost}
+            />
+            <TouchableOpacity style={styles.button}
+              onPress={() => this.goForm()}>
+              <Text style={styles.buttonText}>Next</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )
+    } else {
+      return (
+        <View style={styles.container}>
+          <View style={styles.notificationsTextCont}>
+            <TouchableOpacity
+              onPress={() => this.home()}>
+              <Text style={styles.signupButton2}>BACK</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.container2}>
+            <TextInput style={styles.inputBox}
+              underlineColorAndroid='rgba(0,0,0,0)'
+              placeholder="Borough"
+              maxLength={100}
+              placeholderTextColor="#ffffff"
+              selectionColor="#fff"
+              keyboardType="default"
+              onChangeText={(borough) => this.setState({ borough })}
+              value={this.state.borough}
+            />
+            <TextInput style={styles.inputBox}
+              underlineColorAndroid='rgba(0,0,0,0)'
+              placeholder="Address"
+              maxLength={100}
+              placeholderTextColor="#ffffff"
+              selectionColor="#fff"
+              keyboardType="default"
+              onChangeText={(address) => this.setState({ address })}
+              value={this.state.address}
+            />
+            <Text style={styles.text}>¿What kind of public?</Text>
+            <View style={styles.switch}>
+              <SwitchSelector
+                initial={0}
+                onPress={value => this.setState({ type_of_public: value })}
+                textColor={'#00ccff'} //'#7a44cf'
+                selectedColor={'#ffffff'}
+                buttonColor={'#00ccff'}
+                borderColor={'#00ccff'}
+                hasPadding
+                options={[
+                  { label: "KIDS", value: "Niños" },
+                  { label: "ADULTS", value: "Adultos" },
+                  { label: "FAMILY", value: "Familia" }
+                ]}
+              />
+            </View>
+            <Text style={styles.text}>¿What kind of Category?</Text>
+            <View style={styles.switch}>
+              <SwitchSelector
+                initial={0}
+                onPress={value => this.setState({ category: value })}
+                textColor={'#00ccff'} //'#7a44cf'
+                selectedColor={'#ffffff'}
+                buttonColor={'#00ccff'}
+                borderColor={'#00ccff'}
+                hasPadding
+                options={[
+                  { label: "THEATER", value: "Teatro" },
+                  { label: "SPORTS", value: "Deportes" },
+                  { label: "CONCERTS", value: "Conciertos" },
+                  { label: "FAMILY", value: "Familia" },
+                  { label: "ACADEMIC", value: "Academico" },
+                ]}
+              />
+            </View>
             <View style={styles.datepicker}>
               <DatePicker
                 style={{ width: 200 }}
                 date={this.state.date}
                 mode="date"
-                placeholder="Select Birthdate"
-                format="DD-MM-YYYY"
-                minDate="01-01-1900"
-                maxDate="31-12-2200"
+                placeholder="Select Event Date"
+                format="YYYY-MM-DD HH:mm:ss"
                 confirmBtnText="Confirm"
                 cancelBtnText="Cancel"
                 customStyles={{
@@ -326,22 +343,6 @@ export default class Events extends Component {
                   }
                 }}
                 onDateChange={(date) => { this.setState({ date: date }) }}
-              />
-            </View>
-            <Text style={styles.text}>¿Do you want to receive notifications?</Text>
-            <View style={styles.switch}>
-              <SwitchSelector
-                initial={0}
-                onPress={value => this.setState({ notifications: value })}
-                textColor={'#00ccff'} //'#7a44cf'
-                selectedColor={'#ffffff'}
-                buttonColor={'#00ccff'}
-                borderColor={'#00ccff'}
-                hasPadding
-                options={[
-                  { label: "YES", value: "1" },
-                  { label: "NO", value: "0" }
-                ]}
               />
             </View>
             <TouchableOpacity style={styles.button}
@@ -360,6 +361,7 @@ export default class Events extends Component {
       )
     }
   }
+
 }
 
 const styles = StyleSheet.create({
@@ -447,5 +449,20 @@ const styles = StyleSheet.create({
   },
   datepicker: {
     marginTop: 8,
+  },
+  notificationsTextCont: {
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    display: 'flex',
+    alignItems: 'center',
+    paddingHorizontal: wp('5%'),
+    paddingTop: wp('6%'),
+    paddingBottom: wp('3%'),
+    marginHorizontal: wp('3%'),
+  },
+  signupButton2: {
+    color: '#ffffff',
+    fontSize: 20,
+    fontWeight: '500'
   },
 });

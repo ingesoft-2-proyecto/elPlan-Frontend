@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Alert } from 'react-native';
 
+console.log("validation.js in utils");
+
 function validateUsername(username) {
     formatotexto = /^[a-zA-Z0-9]+$/;
     if (!formatotexto.test(username)) {

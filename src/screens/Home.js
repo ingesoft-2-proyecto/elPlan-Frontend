@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, Dimensions, FlatList } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -12,12 +12,10 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
-import { API_EVENTS } from '../config/const';
 
-export default class Home extends Component {
+class Home extends Component {
 
   constructor(props) {
-    super(props);
     this.state = {
       isLoading: false,
       name: '',
@@ -38,7 +36,7 @@ export default class Home extends Component {
     Actions.events()
   }
 
-  home() {
+  home(){
     Actions.home()
   }
 
@@ -82,10 +80,9 @@ export default class Home extends Component {
         isLoading: false
       }
     )
-  } 
+  }
 
   render() {
-
     if (this.state.isLoading) {
       return (
         <View style={styles.container}>
@@ -122,9 +119,6 @@ export default class Home extends Component {
             onPress={() => this.advanced_filter()}>
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
-        </View>
-        <View>
-          
         </View>
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
@@ -286,5 +280,25 @@ const styles = StyleSheet.create({
   },
   datepicker: {
     marginTop: 8,
+  },
+  item: {
+    backgroundColor: 'white',
+    padding: 20,
+    marginBottom: 20,
+  },
+  image: {
+    width: Dimensions.get('window').width-80,
+    height: Dimensions.get('window').width *4/7,
+    marginBottom: 15,
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 16,
+    marginBottom: 5,
+    color: '#555',
+  },
+  containerEvents: {
+    padding: 20,
+    backgroundColor: 'white',
   },
 });
