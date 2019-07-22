@@ -35,6 +35,10 @@ export default class Signup extends Component {
 
     }
 
+    login() {
+        Actions.login()
+    }
+
     home() {
         Actions.home()
     }
@@ -144,14 +148,14 @@ export default class Signup extends Component {
                 this.state.email,
                 this.state.age,
                 this.state.date,
-                this.state.notifications
+                this.state.notifications,
             )
 
             let status = response.status;
             console.log("res status: " + status);
 
             switch (status) {
-        case 201:
+                case 201:
 
                     this.setState({ errors: [] })
                     console.log("Nuevo usuario creado");
@@ -277,7 +281,7 @@ export default class Signup extends Component {
                     </View>
                     <View style={styles.signupTextCont}>
                         <Text style={styles.signupText}>¿Posees una cuenta?</Text>
-                        <TouchableOpacity onPress={this.goBack}><Text style={styles.signupButton}> LOGIN </Text></TouchableOpacity>
+                        <TouchableOpacity onPress={this.login}><Text style={styles.signupButton}> LOGIN </Text></TouchableOpacity>
                     </View>
                 </View>
             )

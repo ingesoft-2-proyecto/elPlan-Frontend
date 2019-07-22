@@ -6,7 +6,6 @@ import { getToken } from './login';
 console.log("signup.js in utils");
 
 export const sendDataToSignUp = async (name, lastname, password, confirmpassword, email, age, date, notifications) => {
-    console.log("signup.js in utils, sendDataToSignUp");
     return fetch(API_SIGN_UP, {
         method: 'POST',
         headers: {

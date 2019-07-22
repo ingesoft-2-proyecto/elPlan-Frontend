@@ -19,40 +19,31 @@ import Events from '../screens/Events';
 import Event_page from '../screens/Event_page';
 import ProfileUpdate from '../screens/ProfileUpdate';
 import Landing_page from '../screens/Landing_page';
+import Event_page from '../screens/Event_page';
+import Event_Statistics from '../screens/Event_Statistics';
 
-export default class Routes extends Component<{}> {
-
-	constructor() {
-    super();
-		console.log("********************** Routes.js in routing constructor() ++++++++++++++++++++++");
-		window.events = "events";
-		this.state = {
-      isLoading: true,
-      store: configureStore(() => this.setState({ isLoading: false })),
-    };
-  }
-
-	render() {
+export default class Routes extends Component {
+	render() {		
 		return(
-			console.log("Routes.js in routing render()"),
-			<Provider store={this.state.store}>
-				<Router>
-				      <Stack key="root" hideNavBar={true}>
-						  <Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
-						  <Scene key="login" component={Login} title="login"/>
-				      <Scene key="signup" component={Signup} title="Register"/>
-							<Scene key="app_form" component={App_form} title="App_Form"/>
-							<Scene key="home" component={Home} title="Home"/>
-							<Scene key="profile" component={Profile} title="profile" />
-							<Scene key="menu" component={Menu} title="menu" />
-							<Scene key="notifications" component={Notifications} title="notifications" />
-							<Scene key="advanced_filter" component={Advanced_filter} title="advanced_filter" />
-							<Scene key="events" component={Events} title="events" />
-						  <Scene key="event_page" component={Event_page} title="event_page" />
-							<Scene key="profileupdate" component={ProfileUpdate} title="profileupdate" />
-						</Stack>
-				 </Router>
-				</Provider>
-			)
-	}
+
+			<Router>
+			    <Stack key="root" hideNavBar={true}>
+
+						<Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
+						<Scene key="login" component={Login} title="login"/>
+			      <Scene key="signup" component={Signup} title="Register"/>
+						<Scene key="app_form" component={App_form} title="App_Form"/>
+						<Scene key="home" component={Home} title="Home"/>
+						<Scene key="profile" component={Profile} title="profile" />
+						<Scene key="menu" component={Menu} title="menu" />
+						<Scene key="notifications" component={Notifications} title="notifications" />
+						<Scene key="advanced_filter" component={Advanced_filter} title="advanced_filter" />
+						<Scene key="events" component={Events} title="events" />
+						<Scene key="profileupdate" component={ProfileUpdate} title="profileupdate" />
+						<Scene key="event_page" component={Event_page} title="event_page" />
+						<Scene key="event_statistics" component={Event_Statistics} title="event_statistics" />
+					</Stack>
+			 </Router
+
+	
 }
