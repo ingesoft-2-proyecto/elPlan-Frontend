@@ -20,6 +20,7 @@ export default class Routes extends Component<{}> {
 
 			<Router>
 			    <Stack key="root" hideNavBar={true}>
+
 						<Scene key="landingpage" component={Landing_page} title="landingpage" initial={true}/>
 						<Scene key="login" component={Login} title="login"/>
 			      <Scene key="signup" component={Signup} title="Register"/>

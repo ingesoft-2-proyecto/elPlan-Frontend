@@ -6,6 +6,7 @@ import { validateLogin } from "../utils/validation";
 import { Alert } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
+import * as firebase from 'firebase';
 
 
 
@@ -29,8 +30,22 @@ export default class Landing_page extends Component {
     Actions.login()
   }
 
-  landingpage(){
-    Alert.alert("Aca se autenticaria con facebook");
+
+  async landingpage() {
+  //Actions.landingpage()
+    const { type, token } = await Expo.Facebook.logInWithReadPermissionsAsync('2860165380720120', { permissions: ['public_profile'] })
+
+    if (type == 'success') {
+
+      const credential = firebase.auth.FacebookAuthProvider.credential(token)
+
+      firebase.auth().signInWithCredential(credential).catch((error) => {
+        console.log(error)
+
+
+      })
+    }
+
   }
 
   render() {
