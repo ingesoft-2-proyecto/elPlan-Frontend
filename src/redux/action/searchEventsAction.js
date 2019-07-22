@@ -17,6 +17,10 @@ export function setSearchEvents (events) {
 export function getSearchEvents (events) {
   return (dispatch) => {
     let endpoint = window.events;
+    let aux = window.events;
+    if(endpoint === "events/"){
+      endpoint = endpoint + window.eventsId;
+    }
     console.log("Endpoint al cual se realizara la peticion: " + API + "/" + endpoint);
     console.log("searchEventsAction.js in redux redux/action -- obteniendo datos");
     return fetch(`${API}/${endpoint}`, {
@@ -30,7 +34,9 @@ export function getSearchEvents (events) {
     .then(response => response.json())
     .then( json => {
       console.log("getSearchEvents", json);
-
+      if(aux === "events/"){
+        json = [json]
+      }
       dispatch(setSearchEvents(dataStructureEvent(json)));
     })
     .catch(e => alert(e));
@@ -45,8 +51,15 @@ function methodHttp(endpoint){
   case "statistic_cost":
     return 'POST';
     break;
+  case "search_filter":
+    return 'POST';
+    break;
+  case "event_filter":
+    return 'POST';
+    break;
   default:
     return 'GET';
+    break;
   }
 }
 
@@ -57,10 +70,21 @@ function bodyRequest(endpoint){
     break;
   case "statistic_cost":
     return JSON.stringify( {
-      "cost": "5.6"
+      "cost": window.eventsPrice
+    })
+    break;
+  case "search_filter":
+    return JSON.stringify( {
+      "search": window.eventsName
+    })
+    break;
+  case "event_filter":
+    return JSON.stringify( {
+      "category": window.eventsCategory
     })
     break;
   default:
-    return 'GET';
+    return null;
+    break;
   }
 }
