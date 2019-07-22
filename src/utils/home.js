@@ -9,10 +9,11 @@ const LASTNAME = 'lastname';
 const AGE = 'age';
 const EMAIL = 'email';
 const URL = 'fileURL';
+const DATE = 'date';
 
 console.log("home.js in utils, general class");
 
-const storeUserPicture = async(url) => {
+export const storeUserPicture = async(url) => {
   console.log("home.js in utils, storeUserPicture");
     try {
         AsyncStorage.setItem(URL, url);
@@ -53,7 +54,7 @@ export const getUrl = async () => {
     }
 }
 
-const storeUserData = async(id, name, lastname, age, email) => {
+const storeUserData = async(id, name, lastname, age, email, date) => {
   console.log("home.js in utils, storeUserData");
     try {
         AsyncStorage.setItem(ID, id.toString());
@@ -61,6 +62,7 @@ const storeUserData = async(id, name, lastname, age, email) => {
         AsyncStorage.setItem(LASTNAME, lastname);
         AsyncStorage.setItem(AGE, age.toString());
         AsyncStorage.setItem(EMAIL, email);
+        AsyncStorage.setItem(DATE, date)
     } catch (error) {
         console.log("Guardando info usuario | error")
     }
@@ -85,6 +87,7 @@ export const setUserData = async (token) => {
             res.surname,
             res.age,
             res.email,
+            res.born_date
         )
         return response
     } catch (error) {
@@ -98,6 +101,16 @@ export const getID = async () => {
         let id = await AsyncStorage.getItem(ID);
         console.log("Recibiendo ID: " + id)
         return id
+    } catch (error) {
+        console.log("Recibiendo ID | error")
+    }
+}
+
+export const getDate = async () => {
+    try {
+        let date = await AsyncStorage.getItem(DATE);
+        console.log("Recibiendo ID: " + date)
+        return date
     } catch (error) {
         console.log("Recibiendo ID | error")
     }

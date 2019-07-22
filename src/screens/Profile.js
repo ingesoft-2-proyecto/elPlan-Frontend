@@ -3,7 +3,7 @@ import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity
 import { Actions } from 'react-native-router-flux';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken } from '../utils/login';
-import { setUserData, getName, getID, setUserPicture, getUrl, getAge, getEmail, getLastname } from '../utils/home';
+import { setUserData, getName, getID, setUserPicture, getUrl, getAge, getEmail, getLastname, getDate } from '../utils/home';
 import { getEvents, getFilter, setEventPicture } from '../utils/events';
 
 export default class Profile extends Component {
@@ -16,6 +16,7 @@ export default class Profile extends Component {
       lastname: '',
       fullname: '',
       age: '',
+      date: '',
       email: '',
       source: { uri: '' },
       error: '',
@@ -65,6 +66,7 @@ export default class Profile extends Component {
           lastname: await getLastname(),
           age: await getAge(),
           email: await getEmail(),
+          date: await getDate(),
           source: { uri: `${link}` + '?' + new Date() }
         }
       )
@@ -112,6 +114,10 @@ export default class Profile extends Component {
           <Text style={styles.signupButton2}>{this.state.lastname}</Text>
         </View>
         <View style={styles.profileTextCont2}>
+          <Text style={styles.icons2}>BIRTHDATE: </Text>
+          <Text style={styles.signupButton2}>{this.state.date}</Text>
+        </View>
+        <View style={styles.profileTextCont2}>
           <Text style={styles.icons2}>AGE: </Text>
           <Text style={styles.signupButton2}>{this.state.age}</Text>
         </View>
@@ -146,7 +152,8 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     alignItems: 'flex-end',
     justifyContent: 'center',
-    paddingVertical: 16,
+    paddingVertical: 10,
+    paddingHorizontal: wp('5%'),
     flexDirection: 'row',
     justifyContent: 'space-between',
   },

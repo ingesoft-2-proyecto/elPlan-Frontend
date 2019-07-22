@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, Dimensions, FlatList } from 'react-native';
+import { AppRegistry, FlatList, Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, Dimensions, FlatList } from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -11,19 +11,21 @@ import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken} from '../utils/login';
 import { setUserData, getName, getID, setUserPicture, getUrl} from '../utils/home';
-import { getEvents, getFilter, setEventPicture } from '../utils/events';
+import { getEvents, getFilter, setEventPicture, storeEventID } from '../utils/events';
 
-class Home extends Component {
+export default class Home extends Component {
 
   constructor(props) {
+    super(props);
     this.state = {
       isLoading: false,
       name: '',
       source: { uri: ''},
       search: '',
       error: '',
-      dataset: null,
-      datasetState: null,
+      data: [],
+      page: 1,
+      refreshing: false,
     };
 
   }
@@ -59,12 +61,22 @@ class Home extends Component {
       }
     );
     try {
+      let response = await getEvents();
+      let res = await response.json();
+      console.log(res)
+      console.log(res.lenght)
+      this.setState(
+        {
+          data: res,
+        }
+      )
       let token = await getToken()
       console.log("Home | token: " + token)
       await setUserData(token);
       let id = await getID();
       await setUserPicture(id);
       let link = await getUrl();
+
       this.setState(
         {
           name: await getName(),
@@ -120,6 +132,11 @@ class Home extends Component {
             <Text style={styles.buttonText}>Advanced Filters</Text>
           </TouchableOpacity>
         </View>
+        <FlatList
+          data={this.state.data}
+        >
+          
+        </FlatList>
         <View style={styles.signupTextCont}>
           <TouchableOpacity onPress={this.home}>
             <Text style={styles.icons}> HOME </Text>
