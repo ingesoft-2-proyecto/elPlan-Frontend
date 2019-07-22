@@ -18,6 +18,7 @@ const firebaseConfig = {
 };
 
 
+
 firebase.initializeApp(firebaseConfig);
 
 import Routes from './src/routing/Routes';
