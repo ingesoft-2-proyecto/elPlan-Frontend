@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, ScrollView, KeyboardAvoidingView} from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -10,7 +10,7 @@ import SwitchSelector from "react-native-switch-selector";
 import moment from 'moment';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { sendDataToLogIn, storeToken, getToken, removeToken, storeID } from '../utils/login';
-import { sendDataToEvents } from '../utils/events';
+import { sendDataToEvents, sendPictureToEvents, storeEventID } from '../utils/events';
 
 export default class Events extends Component {
 
@@ -37,12 +37,24 @@ export default class Events extends Component {
 
   }
 
+  event_page() {
+    Actions.event_page()
+  }
+
   home() {
     Actions.home()
   }
 
   goBack() {
     Actions.pop();
+  }
+
+  goBack2() {
+    this.setState(
+      {
+        isSignup: false
+      }
+    )
   }
 
   goForm() {
@@ -99,11 +111,12 @@ export default class Events extends Component {
     }
     const { date } = this.state;
     const eventdate = moment(date, "YYYY-MM-DD HH:mm:ss");
-    const eventdate2 = eventdate.format("YYYY-MM-DD HH:mm:ss UTC");
+    const fulldate = eventdate.format("YYYY-MM-DD HH:mm:ss UTC")
+    console.log(fulldate)
 
     await this.setState(
       {
-        hour: eventdate2
+        hour: fulldate
       }
     );
 
@@ -142,10 +155,12 @@ export default class Events extends Component {
       console.log("res status: " + status);
       let res = await response.json();
       let event_id = res.id
+      storeEventID(event_id);
+      console.log("ID DEL EVENTO: " + event_id)
 
       if (status >= 200 && status < 300) {
-        this.setState({ errors: [] })
-        Alert.alert("Nuevo evento creado :) GRACIAS")
+
+        console.log("Nuevo evento creado :) GRACIAS")
   
         try {
 
@@ -158,7 +173,7 @@ export default class Events extends Component {
             this.setState({ errors2: [] })
             console.log("Foto de evento subida");
             this.setState({ isLoading: false })
-            this.home()
+            this.event_page()
 
           } else {
 
@@ -210,45 +225,71 @@ export default class Events extends Component {
     if (this.state.isSignup == false) {
       return (
         <View style={styles.container}>
-          <View style={styles.notificationsTextCont}>
+          <View style={styles.notificationsTextCont2}>
             <TouchableOpacity
-              onPress={() => this.goBack()}>
+              onPress={() => this.home()}>
               <Text style={styles.signupButton2}>BACK</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.container2}>
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Name"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="default"
-              onChangeText={(name) => this.setState({ name })}
-              value={this.state.name}
-            />
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Description"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="default"
-              multiline = { true }
-              numberOfLines = { 4 }
-              onChangeText={(description) => this.setState({ description })}
-              value={this.state.description}
-            />
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Cost"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="number-pad"
-              onChangeText={(cost) => this.setState({ cost })}
-              value={this.state.cost}
-            />
+            <ScrollView style={styles.Scroll}>
+            
+              <TextInput style={styles.inputBox}
+                underlineColorAndroid='rgba(0,0,0,0)'
+                placeholder="Name"
+                maxLength={100}
+                placeholderTextColor="#ffffff"
+                selectionColor="#fff"
+                keyboardType="default"
+                onChangeText={(name) => this.setState({ name })}
+                value={this.state.name}
+              />
+              <TextInput style={styles.inputBox2}
+                underlineColorAndroid='rgba(0,0,0,0)'
+                placeholder="Description"
+                maxLength={100}
+                placeholderTextColor="#ffffff"
+                selectionColor="#fff"
+                keyboardType="default"
+                multiline={true}
+                returnKeyType="next"
+                numberOfLines={4}
+                blurOnSubmit={true}
+                onChangeText={(description) => this.setState({ description })}
+                value={this.state.description}
+              />
+              <TextInput style={styles.inputBox}
+                underlineColorAndroid='rgba(0,0,0,0)'
+                placeholder="Cost"
+                maxLength={100}
+                placeholderTextColor="#ffffff"
+                selectionColor="#fff"
+                keyboardType="number-pad"
+                returnKeyType="done"
+                onChangeText={(cost) => this.setState({ cost })}
+                value={this.state.cost}
+              />
+              <TextInput style={styles.inputBox}
+                underlineColorAndroid='rgba(0,0,0,0)'
+                placeholder="Borough"
+                maxLength={100}
+                placeholderTextColor="#ffffff"
+                selectionColor="#fff"
+                keyboardType="default"
+                onChangeText={(borough) => this.setState({ borough })}
+                value={this.state.borough}
+              />
+              <TextInput style={styles.inputBox}
+                underlineColorAndroid='rgba(0,0,0,0)'
+                placeholder="Address"
+                maxLength={100}
+                placeholderTextColor="#ffffff"
+                selectionColor="#fff"
+                keyboardType="default"
+                onChangeText={(address) => this.setState({ address })}
+                value={this.state.address}
+              />
+            </ScrollView>
             <TouchableOpacity style={styles.button}
               onPress={() => this.goForm()}>
               <Text style={styles.buttonText}>Next</Text>
@@ -259,35 +300,17 @@ export default class Events extends Component {
     } else {
       return (
         <View style={styles.container}>
-          <View style={styles.notificationsTextCont}>
+          <View style={styles.notificationsTextCont2}>
             <TouchableOpacity
-              onPress={() => this.home()}>
+              onPress={() => this.goBack2()}>
               <Text style={styles.signupButton2}>BACK</Text>
             </TouchableOpacity>
           </View>
-          <View style={styles.container2}>
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Borough"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="default"
-              onChangeText={(borough) => this.setState({ borough })}
-              value={this.state.borough}
-            />
-            <TextInput style={styles.inputBox}
-              underlineColorAndroid='rgba(0,0,0,0)'
-              placeholder="Address"
-              maxLength={100}
-              placeholderTextColor="#ffffff"
-              selectionColor="#fff"
-              keyboardType="default"
-              onChangeText={(address) => this.setState({ address })}
-              value={this.state.address}
-            />
+          <View style={styles.notificationsTextCont}>
             <Text style={styles.text}>¿What kind of public?</Text>
-            <View style={styles.switch}>
+          </View>
+          <View style={styles.container2}>
+            <View style={styles.switch2}>
               <SwitchSelector
                 initial={0}
                 onPress={value => this.setState({ type_of_public: value })}
@@ -303,8 +326,12 @@ export default class Events extends Component {
                 ]}
               />
             </View>
+          </View>
+          <View style={styles.notificationsTextCont}>
             <Text style={styles.text}>¿What kind of Category?</Text>
-            <View style={styles.switch}>
+          </View>
+          <View style={styles.container2}>
+            <View style={styles.switch2}>
               <SwitchSelector
                 initial={0}
                 onPress={value => this.setState({ category: value })}
@@ -326,7 +353,7 @@ export default class Events extends Component {
               <DatePicker
                 style={{ width: 200 }}
                 date={this.state.date}
-                mode="date"
+                mode="datetime"
                 placeholder="Select Event Date"
                 format="YYYY-MM-DD HH:mm:ss"
                 confirmBtnText="Confirm"
@@ -368,8 +395,6 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#707070',
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
   },
   signupTextCont: {
     flexGrow: 1,
@@ -402,9 +427,24 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  container3: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1
+  },
   inputBox: {
     width: 300,
     height: 45,
+    backgroundColor: 'rgba(255, 255,255,0.2)',
+    borderRadius: 25,
+    paddingHorizontal: 16,
+    fontSize: 16,
+    color: '#ffffff',
+    marginVertical: 10
+  },
+  inputBox2: {
+    width: 300,
+    height: hp('25%'),
     backgroundColor: 'rgba(255, 255,255,0.2)',
     borderRadius: 25,
     paddingHorizontal: 16,
@@ -443,6 +483,10 @@ const styles = StyleSheet.create({
     width: wp('60%'),
     marginTop: 8,
   },
+  switch2: {
+    width: wp('90%'),
+    marginTop: 8,
+  },
   uploadImageContainer: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -450,19 +494,31 @@ const styles = StyleSheet.create({
   datepicker: {
     marginTop: 8,
   },
+  notificationsTextCont2: {
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    display: 'flex',
+    paddingHorizontal: wp('5%'),
+    paddingTop: wp('5%'),
+    paddingBottom: wp('1%'),
+    marginHorizontal: wp('3%'),
+  },
   notificationsTextCont: {
     justifyContent: 'flex-start',
     flexDirection: 'row',
     display: 'flex',
-    alignItems: 'center',
     paddingHorizontal: wp('5%'),
-    paddingTop: wp('6%'),
+    paddingTop: wp('3%'),
     paddingBottom: wp('3%'),
     marginHorizontal: wp('3%'),
   },
   signupButton2: {
     color: '#ffffff',
     fontSize: 20,
-    fontWeight: '500'
+    fontWeight: '500',
+    textAlign: 'left'
   },
+  Scroll: {
+    flexGrow: 1
+  }
 });

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert } from 'react-native';
+import { Image, StyleSheet, Text, View, StatusBar, TouchableOpacity, TextInput, ActivityIndicator, AsyncStorage, Alert, ScrollView} from 'react-native';
 import Logo from '../components/Logo';
 import { Actions } from 'react-native-router-flux';
 import { validateSignup } from "../utils/validation";
@@ -70,14 +70,16 @@ export default class Notifications extends Component {
     }
     return (
       <View style={styles.container}>
-        <View style={styles.notificationsTextCont}>
+        <View style={styles.notificationsTextCont2}>
           <TouchableOpacity
             onPress={() => this.goBack()}>
             <Text style={styles.signupButton2}>BACK</Text>
           </TouchableOpacity>
         </View>
-        <View style={styles.container2}>
+        <View style={styles.notificationsTextCont}>
           <Text style={styles.text}>¿Do you want to change notifications?</Text>
+        </View>
+        <View style={styles.container3}>
           <View style={styles.switch}>
             <SwitchSelector
               initial={0}
@@ -97,14 +99,14 @@ export default class Notifications extends Component {
             onPress={() => this.Edit()}>
             <Text style={styles.buttonText}>Update</Text>
           </TouchableOpacity>
-          <View style={styles.signupTextCont}>
-            <TouchableOpacity onPress={this.home}>
-              <Text style={styles.icons}> HOME </Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={this.home}>
-              <Text style={styles.icons}> SEARCH </Text>
-            </TouchableOpacity>
-          </View>
+        </View>
+        <View style={styles.signupTextCont}>
+          <TouchableOpacity onPress={this.home}>
+            <Text style={styles.icons}> HOME </Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={this.home}>
+            <Text style={styles.icons}> SEARCH </Text>
+          </TouchableOpacity>
         </View>
       </View>
     )
@@ -115,8 +117,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#707070',
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
+
   },
   signupTextCont: {
     flexGrow: 1,
@@ -130,9 +131,8 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
     flexDirection: 'row',
     display: 'flex',
-    alignItems: 'center',
     paddingHorizontal: wp('5%'),
-    paddingTop: wp('6%'),
+    paddingTop: wp('3%'),
     paddingBottom: wp('3%'),
     marginHorizontal: wp('3%'),
   },
@@ -167,6 +167,10 @@ const styles = StyleSheet.create({
   },
   container2: {
     flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  container3: {
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -217,5 +221,14 @@ const styles = StyleSheet.create({
   },
   datepicker: {
     marginTop: 8,
+  },
+  notificationsTextCont2: {
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    display: 'flex',
+    paddingHorizontal: wp('5%'),
+    paddingTop: wp('5%'),
+    paddingBottom: wp('1%'),
+    marginHorizontal: wp('3%'),
   },
 });
